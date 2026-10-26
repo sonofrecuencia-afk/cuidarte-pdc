@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sesión 1 · El juego y las emociones · Cuidarte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#13301e; --green:#2b5a35; --sage:#dfe6d6; --cream:#f8f4ec;
+  --gold:#a8844b; --gold-soft:#d9c39a; --ink:#1c241e; --muted:#5b655d; --line:#ddd2bd;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--forest)}
+h2{font-size:clamp(32px,5vw,46px)}
+h3{font-size:clamp(24px,3.4vw,30px)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.kicker{font-size:12px;letter-spacing:4px;font-weight:600;color:var(--gold);text-transform:uppercase;margin-bottom:12px;display:block}
+.lead{font-family:var(--serif);font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:var(--ink)}
+section{padding:72px 0}
+
+/* barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(19,48,30,.96);backdrop-filter:blur(6px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.top img{height:30px}
+.top nav{display:flex;gap:20px;font-size:13px;font-weight:500}
+.top nav a{color:var(--cream);text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--gold-soft)}
+@media(max-width:700px){.top nav{display:none}}
+
+/* portada */
+.hero{position:relative;min-height:min(78vh,760px);display:flex;align-items:flex-end;color:var(--cream);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,48,30,.25) 0%,rgba(19,48,30,.62) 38%,rgba(19,48,30,.96) 100%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,rgba(19,48,30,.45) 0%,rgba(19,48,30,.8) 35%,rgba(19,48,30,.97) 100%)}}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px}
+.hero h1{color:var(--cream);font-size:clamp(46px,8vw,86px)}
+.hero h1 em{color:var(--gold-soft)}
+.hero p.sub{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);max-width:640px;margin-top:14px;line-height:1.35}
+.datos{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14px;font-weight:500}
+.datos span{display:flex;align-items:center;gap:8px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:600;font-size:14px;text-decoration:none;letter-spacing:.3px}
+.btn.gold{background:var(--gold);color:#fff}
+.btn.line{border:1.5px solid var(--gold-soft);color:var(--cream)}
+.btn.verde{background:var(--forest);color:var(--cream)}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.intro img{border-radius:180px 180px 18px 18px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 20px 50px rgba(19,48,30,.25)}
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.pilares div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;font-size:13px;font-weight:600;color:var(--green)}
+.pilares b{display:block;font-size:26px;margin-bottom:4px}
+@media(max-width:800px){.intro{grid-template-columns:1fr}.intro img{max-width:380px;margin:0 auto}.pilares{grid-template-columns:repeat(2,1fr)}}
+
+/* sesiones */
+.sesiones{background:var(--sage)}
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:860px){.grid6{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid6{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:18px;padding:24px;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;min-height:210px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(19,48,30,.15)}
+.card .n{font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1}
+.card .f{font-size:12px;letter-spacing:2px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:8px 0 6px}
+.card h3{font-size:25px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.card .ir{margin-top:auto;padding-top:14px;font-weight:600;font-size:14px;color:var(--green)}
+.card.abierta{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.card.abierta h3{color:var(--cream)} .card.abierta p,.card.abierta .f{color:var(--sage)} .card.abierta .ir{color:var(--gold-soft)}
+.card.cerrada{opacity:.75;background:rgba(255,255,255,.55)}
+.card.cerrada .candado{position:absolute;top:22px;right:22px;font-size:20px}
+
+/* herramientas y bosque */
+.lista-h{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+@media(max-width:700px){.lista-h{grid-template-columns:1fr}}
+.h{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.h .ic{font-size:28px;line-height:1}
+.h b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.h span{font-size:14px;color:var(--muted)}
+.h.pronto{opacity:.6}
+.bosque{background:var(--forest);color:var(--cream)}
+.bosque h2{color:var(--cream)}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.galeria img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+@media(max-width:700px){.galeria{grid-template-columns:repeat(2,1fr)}}
+
+/* páginas internas */
+.cabecera{background:var(--forest);color:var(--cream);padding:64px 0 54px}
+.cabecera h1{color:var(--cream);font-size:clamp(40px,6.5vw,68px)}
+.cabecera h1 em{color:var(--gold-soft)}
+.cabecera p{font-family:var(--serif);font-size:22px;color:var(--sage);margin-top:10px;max-width:700px}
+.volver{display:inline-block;margin-bottom:20px;color:var(--gold-soft);font-size:14px;text-decoration:none;font-weight:600}
+.bloque{padding:52px 0;border-bottom:1px solid var(--line)}
+.bloque:last-of-type{border-bottom:0}
+.bloque .wrap{max-width:780px}
+.bloque p+p{margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:7px 15px;font-size:14px;font-weight:500}
+.audio{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:20px;box-shadow:0 10px 30px rgba(19,48,30,.08)}
+.audio b{font-family:var(--serif);font-size:24px;color:var(--forest);display:block}
+.audio small{color:var(--muted)}
+.audio audio{width:100%;margin-top:14px}
+ol.pasos{margin:16px 0 0 20px}
+ol.pasos li{margin-bottom:6px}
+.nota{background:var(--sage);border-left:4px solid var(--gold);border-radius:0 14px 14px 0;padding:16px 20px;margin-top:20px;font-size:15px}
+.credito{font-size:13px;color:var(--muted);margin-top:22px;font-style:italic}
+blockquote{font-family:var(--serif);font-size:24px;line-height:1.35;color:var(--green);font-style:italic;border-left:3px solid var(--gold-soft);padding-left:18px;margin:22px 0}
+blockquote cite{display:block;font-family:var(--sans);font-size:13px;font-style:normal;color:var(--muted);margin-top:6px}
+.calc{background:var(--forest);color:var(--cream);border-radius:22px;padding:28px;margin-top:20px}
+.calc label{font-weight:600;font-size:15px}
+.calc input{width:110px;font:600 22px var(--sans);padding:8px 12px;border-radius:12px;border:0;margin:0 10px;text-align:center}
+.calc .res{margin-top:18px;font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--sage)}
+.calc .res b{color:var(--gold-soft);font-size:32px}
+.preguntas li{margin:10px 0 0 20px}
+
+/* pie */
+footer{background:var(--ink);color:var(--sage);padding:46px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+footer .logos{display:flex;gap:22px;align-items:center}
+footer .logos img{height:34px}
+footer .logos img.pdc{height:64px;background:#fff;border-radius:50%;padding:3px}
+footer a{color:var(--gold-soft)}
+footer p+p{margin-top:6px}
+
+/* metodologías */
+.metodos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+@media(max-width:860px){.metodos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.metodos{grid-template-columns:1fr}}
+.metodo{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.metodo .ic{font-size:30px;line-height:1}
+.metodo h3{font-size:24px;margin:10px 0 6px}
+.metodo p{font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a href="index.html"><img src="img/logo_blanco.png" alt="Sonofrecuencia"></a>
+  <nav><a href="#vivimos">Lo que vivimos</a><a href="#practica">Práctica</a><a href="#lectura">Lectura</a><a href="#semana">Para la semana</a></nav>
+</div></header>
+
+<div class="cabecera"><div class="wrap">
+  <a class="volver" href="index.html#sesiones">← Todas las sesiones</a>
+  <span class="kicker" style="color:var(--gold-soft)">Sesión 1 · Sábado 24 de octubre</span>
+  <h1>El juego y <em>las emociones</em></h1>
+  <p>Nos encontramos jugando, conocimos cómo vive cada emoción en el cuerpo y descubrimos que la respiración puede ser nuestra ancla.</p>
+</div></div>
+
+<div class="bloque" id="vivimos"><div class="wrap">
+  <span class="kicker">📝 Lo que vivimos</span>
+  <h2>Jugar, sentir, respirar</h2>
+  <p style="margin-top:16px">Comenzamos con <b>juegos para encontrarnos</b>: movernos, reír y sincronizarnos como grupo. El juego nos saca del piloto automático y nos devuelve la espontaneidad que de adultos solemos olvidar.</p>
+  <p>Luego nos asomamos a la <b>gestión emocional</b> con <b>Alba Emoting</b>, un método creado por la neurocientífica chilena <b>Susana Bloch</b>. Cada emoción básica tiene su propia forma de respirar, una postura y una expresión del rostro. Si aprendemos a reconocerlas en el cuerpo, podemos entrar y salir de ellas con más libertad.</p>
+  <div class="chips"><span>😄 Alegría</span><span>🤍 Amor ternura</span><span>❤️‍🔥 Amor erótico</span><span>😠 Rabia</span><span>😢 Tristeza</span><span>😨 Miedo</span></div>
+  <p>Exploramos la <b>respiración como ancla del bienestar</b> y la <b>inducción de emociones</b> desde el cuerpo. Cerramos con una meditación para <b>respirar desde el corazón</b>.</p>
+  <div class="nota">💡 <b>Para recordar:</b> las emociones no son buenas ni malas: todas nos traen información. Cuando cambiamos la respiración, la emoción también cambia.</div>
+</div></div>
+
+<div class="bloque" id="practica"><div class="wrap">
+  <span class="kicker">🎧 Práctica de la semana</span>
+  <h2>No hagas nada, solo observa</h2>
+  <p style="margin-top:16px">Una práctica guiada de atención de unos 6 minutos. La invitación es simple: detenerte y observar lo que pasa en ti, sin cambiar nada.</p>
+  <div class="audio">
+    <b>No hagas nada, solo observa</b><small>Práctica guiada · 5 min 44 s · Escuela Española de Desarrollo Transpersonal</small>
+    <audio controls preload="none" src="audio/no-hagas-nada-solo-observa.mp3"></audio>
+  </div>
+  <p style="margin-top:20px"><b>Cómo practicar:</b></p>
+  <ol class="pasos">
+    <li>Busca un momento tranquilo del día, idealmente siempre a la misma hora.</li>
+    <li>Siéntate cómodo, con la espalda erguida y los pies en el suelo. Usa audífonos si puedes.</li>
+    <li>Escucha la práctica <b>una vez al día</b> durante esta semana.</li>
+    <li>Al terminar, anota en una libreta una palabra de cómo te sientes.</li>
+  </ol>
+  <p class="credito">Audio de la Escuela Española de Desarrollo Transpersonal (escuelatranspersonal.com), utilizado con su autorización.</p>
+  <div class="nota">🌱 Si te distraes, no pasa nada: darte cuenta de que te distrajiste <b>ya es</b> la práctica. Vuelve con amabilidad.</div>
+</div></div>
+
+<div class="bloque" id="lectura"><div class="wrap">
+  <span class="kicker">📖 Lectura</span>
+  <h2>¿Vivimos antes de morir?</h2>
+  <p style="margin-top:16px">Muchas veces vivimos el presente como una "sala de espera", aguardando que la vida de verdad empiece más adelante. Esta lectura nos invita a preguntarnos cuánto estamos realmente presentes en nuestra propia vida, y cómo la atención plena puede devolvernos a ella.</p>
+  <div class="btns"><a class="btn verde" href="lectura-1.html">Leer el resumen →</a></div>
+  <p class="credito">Resumen del artículo "¿Vivimos antes de morir?" de la Escuela Española de Desarrollo Transpersonal.</p>
+</div></div>
+
+<div class="bloque" id="semana"><div class="wrap">
+  <span class="kicker">✏️ Para la semana</span>
+  <h2>Tu equipaje vital</h2>
+  <p style="margin-top:16px">Después de la práctica o de la lectura, regálate unos minutos para responder en tu libreta:</p>
+  <ul class="preguntas">
+    <li>¿Qué emoción de las que conocimos aparece más en tu semana? ¿Cuál te gustaría que apareciera más?</li>
+    <li>¿Qué equipaje vital llevas? ¿Qué te pesa y qué sientes que podrías soltar?</li>
+    <li>¿Cuánto de tu tiempo vives realmente presente?</li>
+  </ul>
+  <p style="margin-top:18px">Y si quieres, haz el cálculo de las horas que te regala la vida: está al final de la <a href="lectura-1.html#horas">lectura</a>.</p>
+  <div class="nota">💬 Si quieres, comparte en el grupo de WhatsApp una palabra o una frase de lo que descubriste.</div>
+</div></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><b style="color:var(--cream)">Cuidarte</b> · Taller de Bienestar · Punto de Cultura Plaza Bogotá</p>
+      <p><a href="index.html">Volver al inicio</a></p>
+      <p style="margin-top:14px;font-size:12px;opacity:.8">Parte del material de estudio se basa en la Escuela Española de Desarrollo Transpersonal, con su autorización. Alba Emoting es un método desarrollado por la Dra. Susana Bloch.</p>
+    </div>
+    <div class="logos"><img src="img/logo_blanco.png" alt="Sonofrecuencia"><img class="pdc" src="img/logo_pdc.png" alt="Punto de Cultura Plaza Bogotá"></div>
+  </div>
+</footer>
+</body>
+</html>

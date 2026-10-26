@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Vivimos antes de morir? · Lectura semana 1 · Cuidarte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#13301e; --green:#2b5a35; --sage:#dfe6d6; --cream:#f8f4ec;
+  --gold:#a8844b; --gold-soft:#d9c39a; --ink:#1c241e; --muted:#5b655d; --line:#ddd2bd;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--forest)}
+h2{font-size:clamp(32px,5vw,46px)}
+h3{font-size:clamp(24px,3.4vw,30px)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.kicker{font-size:12px;letter-spacing:4px;font-weight:600;color:var(--gold);text-transform:uppercase;margin-bottom:12px;display:block}
+.lead{font-family:var(--serif);font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:var(--ink)}
+section{padding:72px 0}
+
+/* barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(19,48,30,.96);backdrop-filter:blur(6px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.top img{height:30px}
+.top nav{display:flex;gap:20px;font-size:13px;font-weight:500}
+.top nav a{color:var(--cream);text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--gold-soft)}
+@media(max-width:700px){.top nav{display:none}}
+
+/* portada */
+.hero{position:relative;min-height:min(78vh,760px);display:flex;align-items:flex-end;color:var(--cream);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,48,30,.25) 0%,rgba(19,48,30,.62) 38%,rgba(19,48,30,.96) 100%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,rgba(19,48,30,.45) 0%,rgba(19,48,30,.8) 35%,rgba(19,48,30,.97) 100%)}}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px}
+.hero h1{color:var(--cream);font-size:clamp(46px,8vw,86px)}
+.hero h1 em{color:var(--gold-soft)}
+.hero p.sub{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);max-width:640px;margin-top:14px;line-height:1.35}
+.datos{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14px;font-weight:500}
+.datos span{display:flex;align-items:center;gap:8px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:600;font-size:14px;text-decoration:none;letter-spacing:.3px}
+.btn.gold{background:var(--gold);color:#fff}
+.btn.line{border:1.5px solid var(--gold-soft);color:var(--cream)}
+.btn.verde{background:var(--forest);color:var(--cream)}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.intro img{border-radius:180px 180px 18px 18px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 20px 50px rgba(19,48,30,.25)}
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.pilares div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;font-size:13px;font-weight:600;color:var(--green)}
+.pilares b{display:block;font-size:26px;margin-bottom:4px}
+@media(max-width:800px){.intro{grid-template-columns:1fr}.intro img{max-width:380px;margin:0 auto}.pilares{grid-template-columns:repeat(2,1fr)}}
+
+/* sesiones */
+.sesiones{background:var(--sage)}
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:860px){.grid6{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid6{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:18px;padding:24px;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;min-height:210px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(19,48,30,.15)}
+.card .n{font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1}
+.card .f{font-size:12px;letter-spacing:2px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:8px 0 6px}
+.card h3{font-size:25px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.card .ir{margin-top:auto;padding-top:14px;font-weight:600;font-size:14px;color:var(--green)}
+.card.abierta{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.card.abierta h3{color:var(--cream)} .card.abierta p,.card.abierta .f{color:var(--sage)} .card.abierta .ir{color:var(--gold-soft)}
+.card.cerrada{opacity:.75;background:rgba(255,255,255,.55)}
+.card.cerrada .candado{position:absolute;top:22px;right:22px;font-size:20px}
+
+/* herramientas y bosque */
+.lista-h{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+@media(max-width:700px){.lista-h{grid-template-columns:1fr}}
+.h{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.h .ic{font-size:28px;line-height:1}
+.h b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.h span{font-size:14px;color:var(--muted)}
+.h.pronto{opacity:.6}
+.bosque{background:var(--forest);color:var(--cream)}
+.bosque h2{color:var(--cream)}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.galeria img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+@media(max-width:700px){.galeria{grid-template-columns:repeat(2,1fr)}}
+
+/* páginas internas */
+.cabecera{background:var(--forest);color:var(--cream);padding:64px 0 54px}
+.cabecera h1{color:var(--cream);font-size:clamp(40px,6.5vw,68px)}
+.cabecera h1 em{color:var(--gold-soft)}
+.cabecera p{font-family:var(--serif);font-size:22px;color:var(--sage);margin-top:10px;max-width:700px}
+.volver{display:inline-block;margin-bottom:20px;color:var(--gold-soft);font-size:14px;text-decoration:none;font-weight:600}
+.bloque{padding:52px 0;border-bottom:1px solid var(--line)}
+.bloque:last-of-type{border-bottom:0}
+.bloque .wrap{max-width:780px}
+.bloque p+p{margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:7px 15px;font-size:14px;font-weight:500}
+.audio{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:20px;box-shadow:0 10px 30px rgba(19,48,30,.08)}
+.audio b{font-family:var(--serif);font-size:24px;color:var(--forest);display:block}
+.audio small{color:var(--muted)}
+.audio audio{width:100%;margin-top:14px}
+ol.pasos{margin:16px 0 0 20px}
+ol.pasos li{margin-bottom:6px}
+.nota{background:var(--sage);border-left:4px solid var(--gold);border-radius:0 14px 14px 0;padding:16px 20px;margin-top:20px;font-size:15px}
+.credito{font-size:13px;color:var(--muted);margin-top:22px;font-style:italic}
+blockquote{font-family:var(--serif);font-size:24px;line-height:1.35;color:var(--green);font-style:italic;border-left:3px solid var(--gold-soft);padding-left:18px;margin:22px 0}
+blockquote cite{display:block;font-family:var(--sans);font-size:13px;font-style:normal;color:var(--muted);margin-top:6px}
+.calc{background:var(--forest);color:var(--cream);border-radius:22px;padding:28px;margin-top:20px}
+.calc label{font-weight:600;font-size:15px}
+.calc input{width:110px;font:600 22px var(--sans);padding:8px 12px;border-radius:12px;border:0;margin:0 10px;text-align:center}
+.calc .res{margin-top:18px;font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--sage)}
+.calc .res b{color:var(--gold-soft);font-size:32px}
+.preguntas li{margin:10px 0 0 20px}
+
+/* pie */
+footer{background:var(--ink);color:var(--sage);padding:46px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+footer .logos{display:flex;gap:22px;align-items:center}
+footer .logos img{height:34px}
+footer .logos img.pdc{height:64px;background:#fff;border-radius:50%;padding:3px}
+footer a{color:var(--gold-soft)}
+footer p+p{margin-top:6px}
+
+/* metodologías */
+.metodos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+@media(max-width:860px){.metodos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.metodos{grid-template-columns:1fr}}
+.metodo{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.metodo .ic{font-size:30px;line-height:1}
+.metodo h3{font-size:24px;margin:10px 0 6px}
+.metodo p{font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a href="index.html"><img src="img/logo_blanco.png" alt="Sonofrecuencia"></a>
+  <nav><a href="sesion-1.html">Sesión 1</a><a href="#horas">Tus horas</a></nav>
+</div></header>
+
+<div class="cabecera"><div class="wrap">
+  <a class="volver" href="sesion-1.html#lectura">← Volver a la sesión 1</a>
+  <span class="kicker" style="color:var(--gold-soft)">Lectura · Semana 1</span>
+  <h1>¿Vivimos antes <em>de morir?</em></h1>
+  <p>Un resumen para leer con calma, quizás con un té, quizás después de la práctica.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">La pregunta</span>
+  <h3>La vida en la "sala de espera"</h3>
+  <p style="margin-top:14px">Desde siempre los seres humanos nos hemos preguntado si hay vida después de la muerte. Pero quizás la pregunta más urgente es otra: <b>¿hay vida antes de morir?</b></p>
+  <p>Vivimos muy ocupados planificando el futuro, recordando el pasado o imaginando problemas que todavía no existen. Así, el presente se vuelve una especie de sala de espera en la que aguardamos a que llegue "la vida de verdad": cuando terminemos ese trabajo, cuando cambien las cosas, cuando por fin tengamos tiempo…</p>
+  <blockquote>Los obstáculos no estaban en el camino de mi vida: eran mi vida.<cite>Idea atribuida a Alfred Souza</cite></blockquote>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">Libertad interior</span>
+  <h3>Lo que no depende de afuera</h3>
+  <p style="margin-top:14px">Hay personas que, en situaciones muy duras, han mantenido una calma y una dignidad interiores sorprendentes. Nelson Mandela salió de 27 años de prisión abanderando la reconciliación. Viktor Frankl, después de los campos de concentración, enseñó que siempre conservamos la libertad de elegir cómo responder a lo que nos pasa.</p>
+  <p>La buena noticia es que no hace falta ser un personaje histórico para cultivar ese espacio interior. <b>Cualquier persona puede entrenarlo</b>, sean cuales sean sus circunstancias.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">El ritmo de hoy</span>
+  <h3>Correr sin saber hacia dónde</h3>
+  <p style="margin-top:14px">Todo cambia tan rápido que nos adaptamos sin detenernos a elegir. Corremos detrás de metas que, una vez alcanzadas, no nos traen la felicidad prometida, y volvemos a empezar. Hacemos tres cosas a la vez y vivimos apurados incluso en una conversación de sobremesa.</p>
+  <p>Estamos más conectados que nunca y, al mismo tiempo, muchas veces nos sentimos solos y desconocidos para nosotros mismos. Y es que vivir es crecer, y crecer a veces duele: para que llegue el amanecer, la noche tiene que pasar.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">El personaje</span>
+  <h3>Quién creemos ser</h3>
+  <p style="margin-top:14px">De niños necesitábamos tres cosas: <b>ser vistos, ser valorados y ser amados</b>. Para conseguirlas aprendimos a ser de cierta manera, guardando lo que no era aceptado. Así construimos un "personaje" que nos ayudó a crecer, pero que con los años podemos confundir con quienes realmente somos.</p>
+  <p>Ese personaje viaja con dos compañeros poco confiables: el <b>miedo</b>, que nos impide probar lo nuevo, y la <b>inconsciencia</b>, que deja que pensamientos y emociones se adueñen de nuestra casa. Nadie nos enseñó a vivir conscientemente… pero se puede aprender.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">Vivir desde la consciencia</span>
+  <h3>Pasar del modo "pensar" al modo "sentir"</h3>
+  <p style="margin-top:14px">La <b>atención plena</b> (mindfulness) es estar presentes en lo que vivimos, <b>sin juzgar</b>, con una actitud amable y curiosa. No se trata de dejar de pensar, sino de darnos cuenta de que no somos nuestros pensamientos ni nuestras emociones: podemos observarlos como quien mira una película, sin quedar atrapados en ella. A esa mirada se le llama el <b>Testigo</b>.</p>
+  <div class="nota"><b>Prueba ahora, por un minuto:</b><br>¿Puedes sentir la respiración en tu cuerpo? ¿El aire rozando tu piel? ¿Puedes sentir los músculos de tu cara y soltarlos? ¿Lo estás pensando o lo estás sintiendo?</div>
+  <p style="margin-top:18px">Algo tan simple cambia mucho: nos permite <b>responder en vez de reaccionar</b>. La práctica sostenida ayuda a disminuir el estrés, la ansiedad y el dolor, y nos devuelve el gusto por las pequeñas cosas de cada día.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">Un cuento</span>
+  <h3>El cementerio de Kammir</h3>
+  <p style="margin-top:14px">Jorge Bucay cuenta la historia de un buscador que llega a un pueblo cuyo cementerio parecía de niños: ninguna lápida pasaba de los once años. El cuidador le explica que allí, desde los quince años, cada persona lleva una libreta donde anota los momentos que disfrutó intensamente y cuánto duraron. Al morir, se suma ese tiempo y se escribe en su tumba.</p>
+  <p>Porque para ellos, <b>ese es el único tiempo verdaderamente vivido</b>.</p>
+</div></div>
+
+<div class="bloque" id="horas"><div class="wrap">
+  <span class="kicker">Para ti</span>
+  <h3>Las horas que te regala la vida</h3>
+  <p style="margin-top:14px">Si tomamos como referencia una vida de 75 años, son unas <b>650.000 horas</b>. Haz tu propio cálculo:</p>
+  <div class="calc">
+    <label for="edad">Mi edad:</label><input id="edad" type="number" min="1" max="110" inputmode="numeric" placeholder="años"> años
+    <div class="res" id="res">Escribe tu edad para ver el resultado.</div>
+  </div>
+  <p style="margin-top:20px">¿Qué te dice este número? ¿Cómo quieres vivir esas horas? ¿Necesitas hacer algún cambio para disfrutarlas plenamente?</p>
+  <blockquote>La felicidad no está en la meta, sino en el camino.<cite>Inspirado en "Ítaca", de Konstantinos Kavafis</cite></blockquote>
+  <p class="credito">Resumen y adaptación del artículo "¿Vivimos antes de morir?", de la Escuela Española de Desarrollo Transpersonal (<a href="https://www.escuelatranspersonal.com" target="_blank" rel="noopener">escuelatranspersonal.com</a>), utilizado con su autorización. Este resumen no reemplaza al texto original.</p>
+</div></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><b style="color:var(--cream)">Cuidarte</b> · Taller de Bienestar · Punto de Cultura Plaza Bogotá</p>
+      <p><a href="sesion-1.html">Volver a la sesión 1</a> · <a href="index.html">Inicio</a></p>
+    </div>
+    <div class="logos"><img src="img/logo_blanco.png" alt="Sonofrecuencia"><img class="pdc" src="img/logo_pdc.png" alt="Punto de Cultura Plaza Bogotá"></div>
+  </div>
+</footer>
+
+<script>
+  var input = document.getElementById('edad'), res = document.getElementById('res');
+  function fmt(n){ return Math.round(n).toLocaleString('es-CL'); }
+  input.addEventListener('input', function(){
+    var e = parseInt(input.value, 10);
+    if (!e || e < 1) { res.textContent = 'Escribe tu edad para ver el resultado.'; return; }
+    var vividas = e * 8760, quedan = 650000 - vividas;
+    res.innerHTML = 'Has vivido cerca de <b>' + fmt(vividas) + '</b> horas.<br>' +
+      (quedan > 0 ? 'Aún te quedan unas <b>' + fmt(quedan) + '</b> horas para vivir lo que tú quieras vivir.'
+                  : 'Cada hora que viene es un regalo extra: ¿cómo quieres vivirla?');
+  });
+</script>
+</body>
+</html>
