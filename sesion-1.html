@@ -137,13 +137,33 @@ footer p+p{margin-top:6px}
 .metodo .ic{font-size:30px;line-height:1}
 .metodo h3{font-size:24px;margin:10px 0 6px}
 .metodo p{font-size:14px;color:var(--muted)}
+
+/* redes y logos */
+.redes{display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:26px}
+.redes a{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream);background:rgba(255,255,255,.1);border:1px solid rgba(217,195,154,.45);border-radius:60px;padding:6px 18px 6px 6px}
+.redes a:hover{background:rgba(255,255,255,.18)}
+.redes img{width:48px;height:48px;border-radius:50%;background:#fff;object-fit:contain;padding:2px}
+.redes span{display:flex;align-items:center;gap:6px;font-weight:600;font-size:14px;flex-wrap:wrap}
+.redes small{display:block;width:100%;font-weight:500;font-size:11px;letter-spacing:1px;color:var(--gold-soft);text-transform:uppercase}
+/* galería de sesión */
+.fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.fotos button{border:0;padding:0;cursor:zoom-in;border-radius:14px;overflow:hidden;background:none}
+.fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .3s}
+.fotos button:hover img{transform:scale(1.04)}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.videos video{width:100%;border-radius:14px;background:#000;aspect-ratio:9/16;object-fit:cover}
+@media(max-width:560px){.fotos{grid-template-columns:repeat(2,1fr)}}
+.visor{position:fixed;inset:0;background:rgba(10,20,14,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.visor.on{display:flex}
+.visor img{max-width:100%;max-height:90vh;border-radius:10px}
+.visor button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:38px;cursor:pointer;line-height:1}
 </style>
 </head>
 <body>
 
 <header class="top"><div class="wrap">
   <a href="index.html"><img src="img/logo_blanco.png" alt="Sonofrecuencia"></a>
-  <nav><a href="#vivimos">Lo que vivimos</a><a href="#practica">Práctica</a><a href="#lectura">Lectura</a><a href="#semana">Para la semana</a></nav>
+  <nav><a href="#vivimos">Lo que vivimos</a><a href="#galeria">Galería</a><a href="#practica">Práctica</a><a href="#lectura">Lectura</a><a href="#semana">Para la semana</a></nav>
 </div></header>
 
 <div class="cabecera"><div class="wrap">
@@ -151,6 +171,10 @@ footer p+p{margin-top:6px}
   <span class="kicker" style="color:var(--gold-soft)">Sesión 1 · Sábado 24 de octubre</span>
   <h1>El juego y <em>las emociones</em></h1>
   <p>Nos encontramos jugando, conocimos cómo vive cada emoción en el cuerpo y descubrimos que la respiración puede ser nuestra ancla.</p>
+  <div class="redes">
+      <a href="https://instagram.com/puntodecultura_plazabogota" target="_blank" rel="noopener"><img src="img/logo_pdc.png" alt="Logo Punto de Cultura Plaza Bogotá"><span><small>Punto de Cultura Plaza Bogotá</small><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@puntodecultura_plazabogota</span></a>
+      <a href="https://instagram.com/sonofrecuencia_musicoterapia" target="_blank" rel="noopener"><img src="img/logo_sono_circulo.png" alt="Logo Sonofrecuencia"><span><small>Sonofrecuencia · Musicoterapia</small><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@sonofrecuencia_musicoterapia</span></a>
+    </div>
 </div></div>
 
 <div class="bloque" id="vivimos"><div class="wrap">
@@ -162,6 +186,26 @@ footer p+p{margin-top:6px}
   <p>Exploramos la <b>respiración como ancla del bienestar</b> y la <b>inducción de emociones</b> desde el cuerpo. Cerramos con una meditación para <b>respirar desde el corazón</b>.</p>
   <div class="nota">💡 <b>Para recordar:</b> las emociones no son buenas ni malas: todas nos traen información. Cuando cambiamos la respiración, la emoción también cambia.</div>
 </div></div>
+
+<div class="bloque" id="galeria"><div class="wrap">
+  <span class="kicker">📸 Galería</span>
+  <h2>Así lo vivimos</h2>
+  <p style="margin-top:12px">Algunos momentos de nuestro primer encuentro. Toca una foto para verla en grande.</p>
+  <div class="fotos">
+    <button type="button" data-src="img/sesion1/s1-01.jpg"><img src="img/sesion1/s1-01.jpg" alt="El grupo de la primera sesión con los cuencos e instrumentos" loading="lazy"></button>
+    <button type="button" data-src="img/sesion1/s1-02.jpg"><img src="img/sesion1/s1-02.jpg" alt="Juego con instrumentos" loading="lazy"></button>
+    <button type="button" data-src="img/sesion1/s1-03.jpg"><img src="img/sesion1/s1-03.jpg" alt="Mano en el corazón: respirar y sentir" loading="lazy"></button>
+    <button type="button" data-src="img/sesion1/s1-04.jpg"><img src="img/sesion1/s1-04.jpg" alt="Respiración consciente en círculo" loading="lazy"></button>
+    <button type="button" data-src="img/sesion1/s1-05.jpg"><img src="img/sesion1/s1-05.jpg" alt="Cuencos tibetanos y de cuarzo" loading="lazy"></button>
+    <button type="button" data-src="img/sesion1/s1-06.jpg"><img src="img/sesion1/s1-06.jpg" alt="Escuchar el cuerpo" loading="lazy"></button>
+  </div>
+  <div class="videos">
+    <video controls preload="none" playsinline poster="img/sesion1/s1-video-1.jpg" src="video/s1-video-1.mp4"></video>
+    <video controls preload="none" playsinline poster="img/sesion1/s1-video-2.jpg" src="video/s1-video-2.mp4"></video>
+  </div>
+</div></div>
+
+<div class="visor" id="visor" role="dialog" aria-label="Foto ampliada"><button type="button" aria-label="Cerrar">×</button><img alt=""></div>
 
 <div class="bloque" id="practica"><div class="wrap">
   <span class="kicker">🎧 Práctica de la semana</span>
@@ -213,5 +257,13 @@ footer p+p{margin-top:6px}
     <div class="logos"><img src="img/logo_blanco.png" alt="Sonofrecuencia"><img class="pdc" src="img/logo_pdc.png" alt="Punto de Cultura Plaza Bogotá"></div>
   </div>
 </footer>
+<script>
+  var visor = document.getElementById('visor'), vimg = visor.querySelector('img');
+  document.querySelectorAll('.fotos button').forEach(function (b) {
+    b.addEventListener('click', function () { vimg.src = b.getAttribute('data-src'); vimg.alt = b.querySelector('img').alt; visor.classList.add('on'); });
+  });
+  visor.addEventListener('click', function () { visor.classList.remove('on'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') visor.classList.remove('on'); });
+</script>
 </body>
 </html>
