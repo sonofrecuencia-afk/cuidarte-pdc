@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sesión 2 · Habitar el presente · Cuidarte</title>
+<meta name="description" content="Piloto automático, atención plena, el cuento sonoro, el mural colectivo y la práctica de la semana.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuidarte · Sonofrecuencia">
+<meta property="og:title" content="Sesión 2 · Habitar el presente · Cuidarte">
+<meta property="og:description" content="Piloto automático, atención plena, el cuento sonoro, el mural colectivo y la práctica de la semana.">
+<meta property="og:url" content="https://cuidarte-pdc.sonofrecuencia.cl/sesion-2.html">
+<meta property="og:image" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<meta property="og:image:secure_url" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuidarte, taller de bienestar del Punto de Cultura Plaza Bogotá">
+<meta property="og:locale" content="es_CL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<link rel="icon" href="img/logo_sono_circulo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#13301e; --green:#2b5a35; --sage:#dfe6d6; --cream:#f8f4ec;
+  --gold:#a8844b; --gold-soft:#d9c39a; --ink:#1c241e; --muted:#5b655d; --line:#ddd2bd;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--forest)}
+h2{font-size:clamp(32px,5vw,46px)}
+h3{font-size:clamp(24px,3.4vw,30px)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.kicker{font-size:12px;letter-spacing:4px;font-weight:600;color:var(--gold);text-transform:uppercase;margin-bottom:12px;display:block}
+.lead{font-family:var(--serif);font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:var(--ink)}
+section{padding:72px 0}
+
+/* barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(19,48,30,.96);backdrop-filter:blur(6px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.top img{height:30px}
+.top nav{display:flex;gap:20px;font-size:13px;font-weight:500}
+.top nav a{color:var(--cream);text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--gold-soft)}
+@media(max-width:700px){.top nav{display:none}}
+
+/* portada */
+.hero{position:relative;min-height:min(78vh,760px);display:flex;align-items:flex-end;color:var(--cream);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,48,30,.25) 0%,rgba(19,48,30,.62) 38%,rgba(19,48,30,.96) 100%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,rgba(19,48,30,.45) 0%,rgba(19,48,30,.8) 35%,rgba(19,48,30,.97) 100%)}}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px}
+.hero h1{color:var(--cream);font-size:clamp(46px,8vw,86px)}
+.hero h1 em{color:var(--gold-soft)}
+.hero p.sub{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);max-width:640px;margin-top:14px;line-height:1.35}
+.datos{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14px;font-weight:500}
+.datos span{display:flex;align-items:center;gap:8px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:600;font-size:14px;text-decoration:none;letter-spacing:.3px}
+.btn.gold{background:var(--gold);color:#fff}
+.btn.line{border:1.5px solid var(--gold-soft);color:var(--cream)}
+.btn.verde{background:var(--forest);color:var(--cream)}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.intro img{border-radius:180px 180px 18px 18px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 20px 50px rgba(19,48,30,.25)}
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.pilares div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;font-size:13px;font-weight:600;color:var(--green)}
+.pilares b{display:block;font-size:26px;margin-bottom:4px}
+@media(max-width:800px){.intro{grid-template-columns:1fr}.intro img{max-width:380px;margin:0 auto}.pilares{grid-template-columns:repeat(2,1fr)}}
+
+/* sesiones */
+.sesiones{background:var(--sage)}
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:860px){.grid6{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid6{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:18px;padding:24px;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;min-height:210px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(19,48,30,.15)}
+.card .n{font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1}
+.card .f{font-size:12px;letter-spacing:2px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:8px 0 6px}
+.card h3{font-size:25px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.card .ir{margin-top:auto;padding-top:14px;font-weight:600;font-size:14px;color:var(--green)}
+.card.abierta{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.card.abierta h3{color:var(--cream)} .card.abierta p,.card.abierta .f{color:var(--sage)} .card.abierta .ir{color:var(--gold-soft)}
+.card.cerrada{opacity:.75;background:rgba(255,255,255,.55)}
+.card.cerrada .candado{position:absolute;top:22px;right:22px;font-size:20px}
+
+/* herramientas y bosque */
+.lista-h{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+@media(max-width:700px){.lista-h{grid-template-columns:1fr}}
+.h{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.h .ic{font-size:28px;line-height:1}
+.h b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.h span{font-size:14px;color:var(--muted)}
+.h.pronto{opacity:.6}
+.bosque{background:var(--forest);color:var(--cream)}
+.bosque h2{color:var(--cream)}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.galeria img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+@media(max-width:700px){.galeria{grid-template-columns:repeat(2,1fr)}}
+
+/* páginas internas */
+.cabecera{background:var(--forest);color:var(--cream);padding:64px 0 54px}
+.cabecera h1{color:var(--cream);font-size:clamp(40px,6.5vw,68px)}
+.cabecera h1 em{color:var(--gold-soft)}
+.cabecera p{font-family:var(--serif);font-size:22px;color:var(--sage);margin-top:10px;max-width:700px}
+.volver{display:inline-block;margin-bottom:20px;color:var(--gold-soft);font-size:14px;text-decoration:none;font-weight:600}
+.bloque{padding:52px 0;border-bottom:1px solid var(--line)}
+.bloque:last-of-type{border-bottom:0}
+.bloque .wrap{max-width:780px}
+.bloque p+p{margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:7px 15px;font-size:14px;font-weight:500}
+.audio{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:20px;box-shadow:0 10px 30px rgba(19,48,30,.08)}
+.audio b{font-family:var(--serif);font-size:24px;color:var(--forest);display:block}
+.audio small{color:var(--muted)}
+.audio audio{width:100%;margin-top:14px}
+ol.pasos{margin:16px 0 0 20px}
+ol.pasos li{margin-bottom:6px}
+.nota{background:var(--sage);border-left:4px solid var(--gold);border-radius:0 14px 14px 0;padding:16px 20px;margin-top:20px;font-size:15px}
+.credito{font-size:13px;color:var(--muted);margin-top:22px;font-style:italic}
+blockquote{font-family:var(--serif);font-size:24px;line-height:1.35;color:var(--green);font-style:italic;border-left:3px solid var(--gold-soft);padding-left:18px;margin:22px 0}
+blockquote cite{display:block;font-family:var(--sans);font-size:13px;font-style:normal;color:var(--muted);margin-top:6px}
+.calc{background:var(--forest);color:var(--cream);border-radius:22px;padding:28px;margin-top:20px}
+.calc label{font-weight:600;font-size:15px}
+.calc input{width:110px;font:600 22px var(--sans);padding:8px 12px;border-radius:12px;border:0;margin:0 10px;text-align:center}
+.calc .res{margin-top:18px;font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--sage)}
+.calc .res b{color:var(--gold-soft);font-size:32px}
+.preguntas li{margin:10px 0 0 20px}
+
+/* pie */
+footer{background:var(--ink);color:var(--sage);padding:46px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+footer .logos{display:flex;gap:22px;align-items:center}
+footer .logos img{height:34px}
+footer .logos img.pdc{height:64px;background:#fff;border-radius:50%;padding:3px}
+footer a{color:var(--gold-soft)}
+footer p+p{margin-top:6px}
+
+/* metodologías */
+.metodos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+@media(max-width:860px){.metodos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.metodos{grid-template-columns:1fr}}
+.metodo{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.metodo .ic{font-size:30px;line-height:1}
+.metodo h3{font-size:24px;margin:10px 0 6px}
+.metodo p{font-size:14px;color:var(--muted)}
+
+/* redes y logos */
+.redes{display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:26px}
+.redes a{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream);background:rgba(255,255,255,.1);border:1px solid rgba(217,195,154,.45);border-radius:60px;padding:6px 18px 6px 6px}
+.redes a:hover{background:rgba(255,255,255,.18)}
+.redes img{width:48px;height:48px;border-radius:50%;background:#fff;object-fit:contain;padding:2px}
+.redes span{display:flex;align-items:center;gap:6px;font-weight:600;font-size:14px;flex-wrap:wrap}
+.redes small{display:block;width:100%;font-weight:500;font-size:11px;letter-spacing:1px;color:var(--gold-soft);text-transform:uppercase}
+/* galería de sesión */
+.fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.fotos button{border:0;padding:0;cursor:zoom-in;border-radius:14px;overflow:hidden;background:none}
+.fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .3s}
+.fotos button:hover img{transform:scale(1.04)}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.videos video{width:100%;border-radius:14px;background:#000;aspect-ratio:9/16;object-fit:cover}
+@media(max-width:560px){.fotos{grid-template-columns:repeat(2,1fr)}}
+.visor{position:fixed;inset:0;background:rgba(10,20,14,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.visor.on{display:flex}
+.visor img{max-width:100%;max-height:90vh;border-radius:10px}
+.visor button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:38px;cursor:pointer;line-height:1}
+
+/* destacado y muro */
+.destacado{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.destacado img{border-radius:16px;width:100%;cursor:zoom-in}
+@media(max-width:700px){.destacado{grid-template-columns:1fr}}
+.frase{font-family:var(--serif);font-size:clamp(28px,4.4vw,40px);line-height:1.15;color:var(--forest);text-align:center;padding:30px 10px;font-style:italic}
+.frase b{color:var(--gold);font-weight:600}
+.muro{background:var(--sage);border-radius:22px;padding:26px;margin-top:22px}
+.muro-lista{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+@media(max-width:600px){.muro-lista{grid-template-columns:1fr}}
+.reflexion{background:#fff;border-radius:16px;padding:18px 20px;border:1px solid var(--line)}
+.reflexion p{font-family:var(--serif);font-size:20px;line-height:1.4;color:var(--ink)}
+.reflexion span{display:block;margin-top:8px;font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.muro-vacio{font-size:15px;color:var(--muted);margin-top:14px}
+.btn[aria-disabled="true"]{opacity:.55;pointer-events:none}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a href="index.html"><img src="img/logo_blanco.png" alt="Sonofrecuencia"></a>
+  <nav><a href="#vivimos">Lo que vivimos</a><a href="#galeria">Galería</a><a href="#practica">Práctica</a><a href="#lectura">Lectura</a><a href="#resonando">Reflexiones</a></nav>
+</div></header>
+
+<div class="cabecera"><div class="wrap">
+  <a class="volver" href="index.html#sesiones">← Todas las sesiones</a>
+  <span class="kicker" style="color:var(--gold-soft)">Sesión 2 · Sábado 31 de octubre</span>
+  <h1>Habitar <em>el presente</em></h1>
+  <p>Salir del piloto automático y de la "sala de espera" para volver a la vida que está ocurriendo ahora.</p>
+  <div class="redes">
+      <a href="https://instagram.com/puntodecultura_plazabogota" target="_blank" rel="noopener"><img src="img/logo_pdc.png" alt="Logo Punto de Cultura Plaza Bogotá"><span><small>Punto de Cultura Plaza Bogotá</small><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@puntodecultura_plazabogota</span></a>
+      <a href="https://instagram.com/sonofrecuencia_musicoterapia" target="_blank" rel="noopener"><img src="img/logo_sono_circulo.png" alt="Logo Sonofrecuencia"><span><small>Sonofrecuencia · Musicoterapia</small><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@sonofrecuencia_musicoterapia</span></a>
+    </div>
+</div></div>
+
+<div class="bloque" id="vivimos"><div class="wrap">
+  <span class="kicker">📝 Lo que vivimos</span>
+  <h2>Jugar, escuchar, crear</h2>
+  <p style="margin-top:16px">Partimos con un <b>repaso de Alba Emoting</b>, recordando cómo vive cada emoción en el cuerpo, y con <b>dos juegos</b> para encontrarnos y activarnos como grupo.</p>
+  <p>Luego profundizamos en la lectura <b>"¿Vivimos antes de morir?"</b>. Muchas veces vivimos en <b>piloto automático</b> o en una <b>sala de espera</b>, aguardando que la vida de verdad empiece después. El mensaje es claro: <b>habitar el presente</b>. Y eso se entrena con la <b>atención plena</b>:</p>
+  <div class="chips"><span>🧘 Formal: meditación, respiración y postura</span><span>🍽️ Informal: lavar la loza, caminar, comer con atención</span></div>
+  <p>Escuchamos el cuento <b>"El cementerio de Kammir"</b> de Jorge Bucay, y calculamos las horas de vida que aún tenemos por delante para elegir cómo vivirlas.</p>
+  <div class="frase">"Hoy es el <b>principio</b> del resto de mi vida"</div>
+  <p>Después vino la <b>musicoterapia</b>: en dos grupos creamos un <b>cuento sonoro</b> con <b>"El pescador y la tormenta"</b>, poniéndole viento, lluvia y mar con nuestros instrumentos. Así descubrimos que la calma no está en evitar la tormenta, sino en escucharla.</p>
+  <p>Cerramos con <b>arteterapia</b>: frente a un <b>lienzo en blanco</b>, cada persona puso al centro lo que le hizo sentido y lo desarrolló libremente. Luego unimos todas las creaciones en el suelo para formar un <b>mural colectivo</b>, y despedimos el encuentro con una <b>música improvisada</b> entre todos.</p>
+  <div class="destacado">
+    <img src="img/sesion2/s2-mural.jpg" alt="Mural colectivo creado en la sesión 2" data-src="img/sesion2/s2-mural.jpg" class="ampliar">
+    <div><span class="kicker">🎨 Nuestro mural</span><h3>Lo individual y lo colectivo</h3><p style="margin-top:10px;color:var(--muted)">Árboles, flores, nubes, raíces y palabras como <i>paz</i>, <i>tranquilidad</i> y <i>serenidad</i>. Cada lienzo cuenta un camino personal, y juntos forman un paisaje de recursos para el bienestar.</p></div>
+  </div>
+</div></div>
+
+<div class="bloque" id="galeria"><div class="wrap">
+  <span class="kicker">📸 Galería</span>
+  <h2>Así lo vivimos</h2>
+  <p style="margin-top:12px">Algunos momentos del segundo encuentro. Toca una foto para verla en grande.</p>
+  <div class="nota">🙏 Si apareces en alguna foto o video y prefieres que no esté publicada, avísanos por el grupo de WhatsApp o por interno y la sacamos de inmediato, sin problema.</div>
+  <div class="fotos">
+    <button type="button" data-src="img/sesion2/s2-01.jpg"><img src="img/sesion2/s2-01.jpg" alt="Mesa con los instrumentos del taller" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-02.jpg"><img src="img/sesion2/s2-02.jpg" alt="Círculo de reflexión: habitar el presente" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-03.jpg"><img src="img/sesion2/s2-03.jpg" alt="Conversando sobre la lectura" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-04.jpg"><img src="img/sesion2/s2-04.jpg" alt="Preparando el cuento sonoro" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-05.jpg"><img src="img/sesion2/s2-05.jpg" alt="El segundo grupo prepara su tormenta" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-06.jpg"><img src="img/sesion2/s2-06.jpg" alt="Presentación del cuento sonoro" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-07.jpg"><img src="img/sesion2/s2-07.jpg" alt="Arteterapia: el lienzo en blanco" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-08.jpg"><img src="img/sesion2/s2-08.jpg" alt="Creando desde el corazón" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-09.jpg"><img src="img/sesion2/s2-09.jpg" alt="Cada uno en su lienzo" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-10.jpg"><img src="img/sesion2/s2-10.jpg" alt="Armando el mural en el suelo" loading="lazy"></button>
+    <button type="button" data-src="img/sesion2/s2-11.jpg"><img src="img/sesion2/s2-11.jpg" alt="Nuestro mural colectivo" loading="lazy"></button>
+  </div>
+  <p style="margin-top:22px"><b>🎶 Los cuentos sonoros y el cierre</b></p>
+  <div class="videos">
+    <video controls preload="none" playsinline poster="img/sesion2/s2-video-1.jpg" src="video/s2-video-1.mp4"></video>
+    <video controls preload="none" playsinline poster="img/sesion2/s2-video-2.jpg" src="video/s2-video-2.mp4"></video>
+    <video controls preload="none" playsinline poster="img/sesion2/s2-video-3.jpg" src="video/s2-video-3.mp4"></video>
+    <video controls preload="none" playsinline poster="img/sesion2/s2-video-4.jpg" src="video/s2-video-4.mp4"></video>
+  </div>
+</div></div>
+
+<div class="visor" id="visor" role="dialog" aria-label="Foto ampliada"><button type="button" aria-label="Cerrar">×</button><img alt=""></div>
+
+<div class="bloque" id="practica"><div class="wrap">
+  <span class="kicker">🎧 Práctica de la semana</span>
+  <h2>Enfoque en la postura</h2>
+  <p style="margin-top:16px">La meditación se apoya en tres pilares: la <b>respiración</b>, la <b>postura</b> y la <b>actitud</b>. Esta semana te invitamos a entrenar la postura: un cuerpo erguido y relajado, firme y a la vez cómodo, que se vuelve casa para la atención.</p>
+  <div class="audio">
+    <b>Enfoque en la postura</b><small>Práctica guiada · 22 min · Escuela Española de Desarrollo Transpersonal</small>
+    <audio controls preload="none" src="audio/enfoque-postura.mp3"></audio>
+  </div>
+  <p style="margin-top:20px"><b>Cómo practicar:</b></p>
+  <ol class="pasos">
+    <li>Busca un lugar tranquilo y una silla o cojín donde puedas sentarte con la espalda erguida, sin apoyarla.</li>
+    <li>Escucha la práctica <b>al menos 3 veces esta semana</b>. Si un día no tienes 22 minutos, regálate solo los primeros 5.</li>
+    <li>Durante el día, practica la <b>atención plena informal</b>: elige una tarea cotidiana (lavar la loza, caminar, comer) y hazla con toda tu atención.</li>
+    <li>Al terminar, anota en tu libreta qué notaste en tu cuerpo.</li>
+  </ol>
+  <p class="credito">Audio de la Escuela Española de Desarrollo Transpersonal (escuelatranspersonal.com), utilizado con su autorización.</p>
+  <div class="nota">🌱 Recuerda: <b>no se trata de dejar la mente en blanco</b>, sino de darte cuenta de dónde está tu atención y volver con amabilidad.</div>
+</div></div>
+
+<div class="bloque" id="lectura"><div class="wrap">
+  <span class="kicker">📖 Para profundizar</span>
+  <h2>El Testigo: tú no eres tus pensamientos</h2>
+  <p style="margin-top:16px">¿Quién se da cuenta de que estás pensando? Una lectura breve sobre la <b>conciencia testigo</b>, la meditación y la atención plena como caminos para observarnos sin juicio y dejar de vivir en piloto automático.</p>
+  <div class="btns"><a class="btn verde" href="lectura-2.html">Leer →</a></div>
+</div></div>
+
+<div class="bloque" id="resonando"><div class="wrap">
+  <span class="kicker">💬 Muro de reflexiones</span>
+  <h2>¿Qué quedó resonando en ti?</h2>
+  <p style="margin-top:16px">De lo que vivimos el sábado (habitar el presente, la conciencia testigo, la aceptación, el amor ternura, el cuento sonoro, los juegos, el mural…), <b>¿qué se quedó contigo durante la semana?</b> Compártelo aquí: una palabra, una frase o lo que necesites decir.</p>
+  <div class="muro">
+    <a class="btn verde" id="muro-btn" href="#" target="_blank" rel="noopener" aria-disabled="true">✍️ Compartir mi reflexión</a>
+    <div class="muro-lista" id="muro-lista"></div>
+    <p class="muro-vacio" id="muro-vacio">Muy pronto podrás dejar aquí tu reflexión. Mientras tanto, compártela en el grupo de WhatsApp 💚</p>
+  </div>
+  <p class="credito">Las reflexiones se publican con el nombre que elijas, o como anónimas. Antes de aparecer aquí pueden tardar unos minutos.</p>
+</div></div>
+
+<div class="bloque" id="semana"><div class="wrap">
+  <span class="kicker">✏️ Para la semana</span>
+  <h2>Preguntas para tu libreta</h2>
+  <ul class="preguntas">
+    <li>¿En qué momentos de tu día vives en piloto automático o en "sala de espera"?</li>
+    <li>¿Qué tarea cotidiana puedes convertir esta semana en un momento de atención plena?</li>
+    <li>Como el pescador: ¿qué tormenta de tu vida podrías escuchar, en vez de pelear con ella?</li>
+    <li>Si hoy es el principio del resto de tu vida… ¿qué quieres sembrar?</li>
+  </ul>
+</div></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><b style="color:var(--cream)">Cuidarte</b> · Taller de Bienestar · Punto de Cultura Plaza Bogotá</p>
+      <p><a href="index.html">Volver al inicio</a> · <a href="sesion-1.html">Sesión 1</a> · <a href="sesion-2.html">Sesión 2</a></p>
+      <p style="margin-top:14px;font-size:12px;opacity:.8">Parte del material de estudio se basa en la Escuela Española de Desarrollo Transpersonal, con su autorización. Alba Emoting es un método desarrollado por la Dra. Susana Bloch. "El cementerio de Kammir" es un cuento de Jorge Bucay.</p>
+    </div>
+    <div class="logos"><img src="img/logo_blanco.png" alt="Sonofrecuencia"><img class="pdc" src="img/logo_pdc.png" alt="Punto de Cultura Plaza Bogotá"></div>
+  </div>
+</footer>
+<script>
+  var visor = document.getElementById('visor'), vimg = visor.querySelector('img');
+  document.querySelectorAll('.fotos button, img.ampliar').forEach(function (b) {
+    b.addEventListener('click', function () { vimg.src = b.getAttribute('data-src'); vimg.alt = (b.querySelector('img') || b).alt; visor.classList.add('on'); });
+  });
+  visor.addEventListener('click', function () { visor.classList.remove('on'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') visor.classList.remove('on'); });
+</script>
+<script>
+  // Muro de reflexiones: completar con los links del formulario y de la hoja publicada como CSV.
+  var MURO_FORM = '';
+  var MURO_CSV = '';
+  (function () {
+    var btn = document.getElementById('muro-btn'), lista = document.getElementById('muro-lista'), vacio = document.getElementById('muro-vacio');
+    if (MURO_FORM) { btn.href = MURO_FORM; btn.removeAttribute('aria-disabled'); vacio.textContent = 'Sé la primera persona en compartir lo que quedó resonando 🌱'; }
+    if (!MURO_CSV) return;
+    function csv(t) {
+      var filas = [], f = [], c = '', q = false;
+      for (var i = 0; i < t.length; i++) {
+        var ch = t[i];
+        if (q) { if (ch === '"') { if (t[i + 1] === '"') { c += '"'; i++; } else q = false; } else c += ch; }
+        else if (ch === '"') q = true;
+        else if (ch === ',') { f.push(c); c = ''; }
+        else if (ch === '\n') { f.push(c); filas.push(f); f = []; c = ''; }
+        else if (ch !== '\r') c += ch;
+      }
+      if (c || f.length) { f.push(c); filas.push(f); }
+      return filas;
+    }
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]; }); }
+    fetch(MURO_CSV + (MURO_CSV.indexOf('?') > -1 ? '&' : '?') + 't=' + Date.now()).then(function (r) { return r.text(); }).then(function (t) {
+      var filas = csv(t).slice(1).filter(function (f) { return f[1] && f[1].trim(); }).reverse();
+      if (!filas.length) return;
+      vacio.style.display = 'none';
+      lista.innerHTML = filas.map(function (f) {
+        return '<div class="reflexion"><p>' + esc(f[1].trim()) + '</p><span>' + esc((f[2] || '').trim() || 'Anónimo') + '</span></div>';
+      }).join('');
+    }).catch(function () {});
+  })();
+</script>
+</body>
+</html>
