@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autoestima: recordar tu valor · Cuidarte</title>
+<meta name="description" content="Una lectura breve sobre la autoestima, de dónde viene, cómo se disfraza y cómo cultivarla con aceptación y compasión.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuidarte · Sonofrecuencia">
+<meta property="og:title" content="Autoestima: recordar tu valor · Cuidarte">
+<meta property="og:description" content="Una lectura breve sobre la autoestima, de dónde viene, cómo se disfraza y cómo cultivarla con aceptación y compasión.">
+<meta property="og:url" content="https://cuidarte-pdc.sonofrecuencia.cl/lectura-3.html">
+<meta property="og:image" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<meta property="og:image:secure_url" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuidarte, taller de bienestar del Punto de Cultura Plaza Bogotá">
+<meta property="og:locale" content="es_CL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<link rel="icon" href="img/logo_sono_circulo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#13301e; --green:#2b5a35; --sage:#dfe6d6; --cream:#f8f4ec;
+  --gold:#a8844b; --gold-soft:#d9c39a; --ink:#1c241e; --muted:#5b655d; --line:#ddd2bd;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--forest)}
+h2{font-size:clamp(32px,5vw,46px)}
+h3{font-size:clamp(24px,3.4vw,30px)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.kicker{font-size:12px;letter-spacing:4px;font-weight:600;color:var(--gold);text-transform:uppercase;margin-bottom:12px;display:block}
+.lead{font-family:var(--serif);font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:var(--ink)}
+section{padding:72px 0}
+
+/* barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(19,48,30,.96);backdrop-filter:blur(6px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.top img{height:30px}
+.top nav{display:flex;gap:20px;font-size:13px;font-weight:500}
+.top nav a{color:var(--cream);text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--gold-soft)}
+@media(max-width:700px){.top nav{display:none}}
+
+/* portada */
+.hero{position:relative;min-height:min(78vh,760px);display:flex;align-items:flex-end;color:var(--cream);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,48,30,.25) 0%,rgba(19,48,30,.62) 38%,rgba(19,48,30,.96) 100%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,rgba(19,48,30,.45) 0%,rgba(19,48,30,.8) 35%,rgba(19,48,30,.97) 100%)}}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px}
+.hero h1{color:var(--cream);font-size:clamp(46px,8vw,86px)}
+.hero h1 em{color:var(--gold-soft)}
+.hero p.sub{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);max-width:640px;margin-top:14px;line-height:1.35}
+.datos{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14px;font-weight:500}
+.datos span{display:flex;align-items:center;gap:8px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:600;font-size:14px;text-decoration:none;letter-spacing:.3px}
+.btn.gold{background:var(--gold);color:#fff}
+.btn.line{border:1.5px solid var(--gold-soft);color:var(--cream)}
+.btn.verde{background:var(--forest);color:var(--cream)}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.intro img{border-radius:180px 180px 18px 18px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 20px 50px rgba(19,48,30,.25)}
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.pilares div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;font-size:13px;font-weight:600;color:var(--green)}
+.pilares b{display:block;font-size:26px;margin-bottom:4px}
+@media(max-width:800px){.intro{grid-template-columns:1fr}.intro img{max-width:380px;margin:0 auto}.pilares{grid-template-columns:repeat(2,1fr)}}
+
+/* sesiones */
+.sesiones{background:var(--sage)}
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:860px){.grid6{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid6{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:18px;padding:24px;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;min-height:210px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(19,48,30,.15)}
+.card .n{font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1}
+.card .f{font-size:12px;letter-spacing:2px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:8px 0 6px}
+.card h3{font-size:25px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.card .ir{margin-top:auto;padding-top:14px;font-weight:600;font-size:14px;color:var(--green)}
+.card.abierta{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.card.abierta h3{color:var(--cream)} .card.abierta p,.card.abierta .f{color:var(--sage)} .card.abierta .ir{color:var(--gold-soft)}
+.card.cerrada{opacity:.75;background:rgba(255,255,255,.55)}
+.card.cerrada .candado{position:absolute;top:22px;right:22px;font-size:20px}
+
+/* herramientas y bosque */
+.lista-h{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+@media(max-width:700px){.lista-h{grid-template-columns:1fr}}
+.h{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.h .ic{font-size:28px;line-height:1}
+.h b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.h span{font-size:14px;color:var(--muted)}
+.h.pronto{opacity:.6}
+.bosque{background:var(--forest);color:var(--cream)}
+.bosque h2{color:var(--cream)}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.galeria img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+@media(max-width:700px){.galeria{grid-template-columns:repeat(2,1fr)}}
+
+/* páginas internas */
+.cabecera{background:var(--forest);color:var(--cream);padding:64px 0 54px}
+.cabecera h1{color:var(--cream);font-size:clamp(40px,6.5vw,68px)}
+.cabecera h1 em{color:var(--gold-soft)}
+.cabecera p{font-family:var(--serif);font-size:22px;color:var(--sage);margin-top:10px;max-width:700px}
+.volver{display:inline-block;margin-bottom:20px;color:var(--gold-soft);font-size:14px;text-decoration:none;font-weight:600}
+.bloque{padding:52px 0;border-bottom:1px solid var(--line)}
+.bloque:last-of-type{border-bottom:0}
+.bloque .wrap{max-width:780px}
+.bloque p+p{margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:7px 15px;font-size:14px;font-weight:500}
+.audio{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:20px;box-shadow:0 10px 30px rgba(19,48,30,.08)}
+.audio b{font-family:var(--serif);font-size:24px;color:var(--forest);display:block}
+.audio small{color:var(--muted)}
+.audio audio{width:100%;margin-top:14px}
+ol.pasos{margin:16px 0 0 20px}
+ol.pasos li{margin-bottom:6px}
+.nota{background:var(--sage);border-left:4px solid var(--gold);border-radius:0 14px 14px 0;padding:16px 20px;margin-top:20px;font-size:15px}
+.credito{font-size:13px;color:var(--muted);margin-top:22px;font-style:italic}
+blockquote{font-family:var(--serif);font-size:24px;line-height:1.35;color:var(--green);font-style:italic;border-left:3px solid var(--gold-soft);padding-left:18px;margin:22px 0}
+blockquote cite{display:block;font-family:var(--sans);font-size:13px;font-style:normal;color:var(--muted);margin-top:6px}
+.calc{background:var(--forest);color:var(--cream);border-radius:22px;padding:28px;margin-top:20px}
+.calc label{font-weight:600;font-size:15px}
+.calc input{width:110px;font:600 22px var(--sans);padding:8px 12px;border-radius:12px;border:0;margin:0 10px;text-align:center}
+.calc .res{margin-top:18px;font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--sage)}
+.calc .res b{color:var(--gold-soft);font-size:32px}
+.preguntas li{margin:10px 0 0 20px}
+
+/* pie */
+footer{background:var(--ink);color:var(--sage);padding:46px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+footer .logos{display:flex;gap:22px;align-items:center}
+footer .logos img{height:34px}
+footer .logos img.pdc{height:64px;background:#fff;border-radius:50%;padding:3px}
+footer a{color:var(--gold-soft)}
+footer p+p{margin-top:6px}
+
+/* metodologías */
+.metodos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+@media(max-width:860px){.metodos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.metodos{grid-template-columns:1fr}}
+.metodo{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.metodo .ic{font-size:30px;line-height:1}
+.metodo h3{font-size:24px;margin:10px 0 6px}
+.metodo p{font-size:14px;color:var(--muted)}
+
+/* redes y logos */
+.redes{display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:26px}
+.redes a{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream);background:rgba(255,255,255,.1);border:1px solid rgba(217,195,154,.45);border-radius:60px;padding:6px 18px 6px 6px}
+.redes a:hover{background:rgba(255,255,255,.18)}
+.redes img{width:48px;height:48px;border-radius:50%;background:#fff;object-fit:contain;padding:2px}
+.redes span{display:flex;align-items:center;gap:6px;font-weight:600;font-size:14px;flex-wrap:wrap}
+.redes small{display:block;width:100%;font-weight:500;font-size:11px;letter-spacing:1px;color:var(--gold-soft);text-transform:uppercase}
+/* galería de sesión */
+.fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.fotos button{border:0;padding:0;cursor:zoom-in;border-radius:14px;overflow:hidden;background:none}
+.fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .3s}
+.fotos button:hover img{transform:scale(1.04)}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.videos video{width:100%;border-radius:14px;background:#000;aspect-ratio:9/16;object-fit:cover}
+@media(max-width:560px){.fotos{grid-template-columns:repeat(2,1fr)}}
+.visor{position:fixed;inset:0;background:rgba(10,20,14,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.visor.on{display:flex}
+.visor img{max-width:100%;max-height:90vh;border-radius:10px}
+.visor button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:38px;cursor:pointer;line-height:1}
+
+/* destacado y muro */
+.destacado{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.destacado img{border-radius:16px;width:100%;cursor:zoom-in}
+@media(max-width:700px){.destacado{grid-template-columns:1fr}}
+.frase{font-family:var(--serif);font-size:clamp(28px,4.4vw,40px);line-height:1.15;color:var(--forest);text-align:center;padding:30px 10px;font-style:italic}
+.frase b{color:var(--gold);font-weight:600}
+.muro{background:var(--sage);border-radius:22px;padding:26px;margin-top:22px}
+.muro-lista{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+@media(max-width:600px){.muro-lista{grid-template-columns:1fr}}
+.reflexion{background:#fff;border-radius:16px;padding:18px 20px;border:1px solid var(--line)}
+.reflexion p{font-family:var(--serif);font-size:20px;line-height:1.4;color:var(--ink);white-space:pre-line}
+.reflexion span{display:block;margin-top:8px;font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.muro-vacio{font-size:15px;color:var(--muted);margin-top:14px}
+.btn[aria-disabled="true"]{opacity:.55;pointer-events:none}
+
+/* sesión 3 */
+.relato{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-top:20px;font-family:var(--serif);font-size:20px;line-height:1.55;box-shadow:0 10px 30px rgba(19,48,30,.06)}
+.relato p+p{margin-top:12px}
+.emociones{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+@media(max-width:700px){.emociones{grid-template-columns:1fr}}
+.emo{background:#fff;border:1px solid var(--line);border-left:6px solid var(--c);border-radius:16px;padding:0;overflow:hidden}
+.emo summary{cursor:pointer;list-style:none;padding:16px 18px;font-family:var(--serif);font-size:24px;font-weight:600;color:var(--forest);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.emo summary::-webkit-details-marker{display:none}
+.emo summary:after{content:"+";margin-left:auto;font-family:var(--sans);font-size:22px;color:var(--gold)}
+.emo[open] summary:after{content:"–"}
+.emo summary small{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.emo .dot{width:14px;height:14px;border-radius:50%;background:var(--c);flex:none}
+.emo dl{padding:0 18px 16px}
+.emo dt{font-weight:600;font-size:14px;color:var(--green);margin-top:10px}
+.emo dd{font-size:15px;color:var(--ink)}
+.ideas{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+@media(max-width:700px){.ideas{grid-template-columns:1fr}}
+.idea{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.idea b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest);line-height:1.2}
+.idea p{font-size:15px;color:var(--muted);margin-top:6px}
+.ejercicios{display:grid;gap:12px;margin-top:24px}
+.ej{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.ej .num{flex:none;width:40px;height:40px;border-radius:50%;background:var(--forest);color:var(--gold-soft);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:24px;font-weight:600}
+.ej b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest);line-height:1.2}
+.ej p{font-size:15px;color:var(--ink);margin-top:4px}
+.grupal{width:100%;border-radius:18px;margin-top:22px;cursor:zoom-in}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a href="index.html"><img src="img/logo_blanco.png" alt="Sonofrecuencia"></a>
+  <nav><a href="sesion-3.html">Sesión 3</a><a href="index.html">Inicio</a></nav>
+</div></header>
+
+<div class="cabecera"><div class="wrap">
+  <a class="volver" href="sesion-3.html#temas">← Volver a la sesión 3</a>
+  <span class="kicker" style="color:var(--gold-soft)">Para profundizar · Semana 3</span>
+  <h1>Autoestima: <em>recordar tu valor</em></h1>
+  <p>Una lectura breve sobre cómo nos miramos, de dónde viene esa mirada y cómo podemos cultivarla con aceptación y compasión.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">¿Qué es?</span>
+  <h3>La mirada que tenemos de nosotros mismos</h3>
+  <p style="margin-top:14px">La <b>autoestima</b> es la visión profunda que cada persona tiene de sí misma: cómo se percibe, cuánto se valora y qué cree que es capaz de hacer. Para Carl Rogers, es el <b>núcleo básico de la personalidad</b>.</p>
+  <p>No es un tema menor: las personas que se valoran tienen más recursos para aprender, resolver problemas, crear, ser autónomas e incluso para amar. En cambio, cuando la autoestima está baja, solemos dejar de lado nuestras propias necesidades y poner siempre primero las de los demás. Y no precisamente por generosidad.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">¿De dónde viene?</span>
+  <h3>Lo que aprendimos de niños</h3>
+  <p style="margin-top:14px">La autoestima se va formando desde la infancia. De adultos, terminamos con un conjunto de creencias sobre <b>quiénes somos</b> y <b>qué lugar ocupamos en el mundo</b>, muchas de ellas aprendidas sin darnos cuenta.</p>
+  <p>Cuando de niños no nos sentimos aceptados por las personas importantes para nosotros (padres, hermanos, profesores), puede quedar instalada la sensación de no ser capaces. Y también ocurre lo contrario: la <b>sobreexigencia</b> de la familia o del entorno puede enviar, sin mala intención, el mensaje de que nunca es suficiente. Así se van formando <b>mandatos</b>, prohibiciones y "deberías" que luego guían cómo pensamos y actuamos.</p>
+  <div class="nota">🌱 Un niño o niña necesita escuchar que es valioso, que es querido, que puede lograr lo que se proponga y que sus palabras merecen respeto. Si eso nos faltó, hoy podemos aprender a decírnoslo.</div>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">Cómo se esconde</span>
+  <h3>La baja autoestima se disfraza</h3>
+  <p style="margin-top:14px">No siempre se nota como inseguridad o timidez. Muchas veces la baja autoestima opera en silencio, camuflada en conductas como:</p>
+  <div class="chips"><span>📏 La sobreexigencia</span><span>🔍 La autocrítica constante</span><span>🚫 No tolerar los propios errores</span><span>⚡ Reaccionar con dureza ante los errores ajenos</span></div>
+  <p>En su trabajo de investigación, Reinaldo cuenta cómo durante años una fuerte autoexigencia lo hizo destacar en los estudios y en el trabajo, pero con un costo emocional que le costó descubrir. El cambio llegó con la <b>autoobservación sin juicio</b>, aceptando los errores como parte natural de ser humanos, reconociendo sus sombras y aprendiendo a perdonarse y a perdonar.</p>
+  <p>También ayuda recordar que muchos estándares de éxito y perfección son <b>impuestos por la sociedad</b>, y algunos son completamente irreales. Solo se vuelven reales cuando los alimentamos sin darnos cuenta.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">El poder de las palabras</span>
+  <h3>Los decretos que nos repetimos</h3>
+  <p style="margin-top:14px">"Qué tonto soy", "soy un desastre", "nunca voy a aprender", "siempre me pasa lo mismo"… Parecen frases inocentes, pero funcionan como <b>decretos</b>: mensajes que, a fuerza de repetirse, nuestra mente termina creyendo. Y después buscamos pruebas que los confirmen.</p>
+  <p>José María Doria propone algo simple: en vez de definirnos por completo con una frase, hablar de <b>una parte</b> de nosotros:</p>
+  <blockquote>"Una parte de mí se siente insegura."<cite>En lugar de: "Yo soy inseguro"</cite></blockquote>
+  <p>Es más verdadero, porque tenemos muchas partes, y cada una tiene su momento. La misma persona que hoy se siente insegura, en otra situación se mostrará firme y confiada.</p>
+  <p>Y al revés: <b>subrayar nuestras cualidades</b> (y las de los demás) no es arrogancia, sino un refuerzo sano. Lo que reconocemos, la mente lo integra.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">Luces y sombras</span>
+  <h3>Lo que no queremos ver de nosotros</h3>
+  <p style="margin-top:14px">Para tener una autoestima integrada necesitamos conocernos en nuestra totalidad. En ese camino aparece lo que Carl Jung llamó la <b>sombra</b>: aquellos aspectos de nosotros que no aceptamos, que escondimos desde niños para encajar y ser queridos.</p>
+  <p>En la sombra no solo hay aspectos "negativos": también hay <b>talentos y cualidades</b> que nunca nos permitimos desarrollar. Como no podemos verla directamente, suele aparecer de forma indirecta, por ejemplo:</p>
+  <ul class="preguntas">
+    <li>Cuando algo de otra persona nos molesta de forma exagerada.</li>
+    <li>Cuando admiramos a alguien de manera desmedida.</li>
+    <li>En reacciones impulsivas que después no reconocemos ("no quise decir eso").</li>
+    <li>En enojos desproporcionados por los errores de los demás.</li>
+  </ul>
+  <p style="margin-top:14px">No se trata de combatir la sombra, sino de <b>iluminarla, aceptarla e integrarla</b>. Lo que antes rechazábamos se convierte en fuente de transformación.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">El camino</span>
+  <h3>Aceptación y compasión</h3>
+  <p style="margin-top:14px"><b>Aceptar</b> no es aguantar, ni resignarse, ni que todo nos guste. Es <b>reconocer lo que es</b>, tal como es en este momento. Incluso puede haber aceptación en un momento doloroso.</p>
+  <p>Cuando dejamos de pelear con lo que somos y empezamos a mirar cada aspecto nuestro con amor, sin engaños ni miedo, aparece la <b>compasión</b>: un amor que nos abraza tal como somos y que, naturalmente, se extiende también hacia los demás.</p>
+  <blockquote>Dejo de resistirme a lo que rechazo de mí. También soy eso.<cite>Chandica</cite></blockquote>
+  <p>Recordemos lo que dice el antiguo mensaje: "ama a tu prójimo <b>como a ti mismo</b>". Quien no se quiere a sí mismo difícilmente puede querer bien a los demás.</p>
+</div></div>
+
+<div class="bloque"><div class="wrap">
+  <span class="kicker">El anillo y el oro</span>
+  <h3>Más allá de la forma</h3>
+  <p style="margin-top:14px">Doria nos invita a distinguir dos dimensiones. Por un lado, nuestra <b>persona</b>: el nombre, la historia, los recuerdos, la que puede tener alta o baja autoestima. Por otro, nuestra <b>esencia</b>: lo más profundo que compartimos todos los seres humanos.</p>
+  <p>Así como las joyas de oro tienen formas distintas (anillos, collares, pulseras), pero todas son oro, cada uno de nosotros es único en su forma y, en el fondo, todos somos la misma luz. Ese valor no se gana ni se pierde: <b>simplemente es</b>.</p>
+  <div class="nota">💎 El trabajo tiene dos caminos: aprender a <b>valorar y cuidar nuestra persona</b>, con sus luces y sombras, y <b>recordar nuestra esencia</b>, ese oro que nunca deja de serlo.</div>
+  <p class="credito">Basado en el trabajo de investigación "La integración de la dimensión personal para la transición a la dimensión transpersonal", de Reinaldo Farías Serey (Escuela Española de Desarrollo Transpersonal, 2018), y en las reflexiones de José María Doria sobre "El verdadero valor del anillo" (<i>Relatos Eternos. Cuentos para aprender a aprender</i>). Resumen con fines educativos.</p>
+  <div class="btns"><a class="btn verde" href="sesion-3.html#ejercicios">Ver los ejercicios de la semana →</a></div>
+</div></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><b style="color:var(--cream)">Cuidarte</b> · Taller de Bienestar · Punto de Cultura Plaza Bogotá</p>
+      <p><a href="index.html">Volver al inicio</a> · <a href="sesion-1.html">Sesión 1</a> · <a href="sesion-2.html">Sesión 2</a> · <a href="sesion-3.html">Sesión 3</a></p>
+      <p style="margin-top:14px;font-size:12px;opacity:.8">Parte del material de estudio se basa en la Escuela Española de Desarrollo Transpersonal, con su autorización. "El verdadero valor del anillo" es un relato tradicional; la versión trabajada pertenece a José María Doria.</p>
+    </div>
+    <div class="logos"><img src="img/logo_blanco.png" alt="Sonofrecuencia"><img class="pdc" src="img/logo_pdc.png" alt="Punto de Cultura Plaza Bogotá"></div>
+  </div>
+</footer>
+
+</body>
+</html>
