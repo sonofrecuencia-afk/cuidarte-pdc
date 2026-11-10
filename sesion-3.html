@@ -223,6 +223,10 @@ footer p+p{margin-top:6px}
 .tabla-emo thead th{background:var(--forest);color:var(--cream);font-size:13px;border-top:0}
 .tabla-emo tbody th{font-family:var(--serif);font-size:19px;color:var(--forest);white-space:nowrap}
 .tabla-emo tbody th small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:600}
+.resumen{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin-top:22px;background:var(--forest);color:var(--cream);border-radius:22px;padding:22px}
+.resumen video{width:100%;aspect-ratio:9/16;border-radius:16px;background:#000;object-fit:cover}
+.resumen h3{color:var(--cream)} .resumen p{color:var(--sage)!important}
+@media(max-width:700px){.resumen{grid-template-columns:1fr}.resumen video{max-width:320px;margin:0 auto}}
 </style>
 </head>
 <body>
@@ -255,6 +259,10 @@ footer p+p{margin-top:6px}
   <div class="destacado">
     <img src="img/sesion3/s3-joyas.jpg" alt="Las joyas interiores del grupo, con las cualidades escritas por todos" data-src="img/sesion3/s3-joyas.jpg" class="ampliar">
     <div><span class="kicker">💎 Nuestras joyas</span><h3>Lo que los otros ven en ti</h3><p style="margin-top:10px;color:var(--muted)">Leal, empático, divertido, perseverante, optimista, alegre… Cada hoja es un regalo del grupo: palabras que nos recuerdan que muchas veces los demás ven en nosotros un valor que nosotros mismos olvidamos.</p></div>
+  </div>
+  <div class="resumen">
+    <video controls preload="none" playsinline poster="img/sesion3/s3-resumen.jpg" src="video/s3-resumen.mp4"></video>
+    <div><span class="kicker">🎬 El resumen</span><h3>Una experiencia de conexión y comunidad</h3><p style="margin-top:10px;color:var(--muted)">Un minuto para revivir el encuentro: el juego, la arteterapia, las joyas que pasaron de mano en mano y el grupo que se va formando sábado a sábado. Desarrollo personal a través del arte.</p></div>
   </div>
   <div class="nota">🔔 El <b>regalo sonoro</b> quedó pendiente: ¡lo viviremos en un próximo encuentro!</div>
 </div></div>
