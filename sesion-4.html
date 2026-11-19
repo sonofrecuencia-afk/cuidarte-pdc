@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sesión 4 · Darle espacio a lo que siento · Cuidarte</title>
+<meta name="description" content="La ternura, el step out, el baño sonoro en grupo, cómo acompañar el llanto en presencia y dos prácticas de presencia en la emoción.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuidarte · Sonofrecuencia">
+<meta property="og:title" content="Sesión 4 · Darle espacio a lo que siento · Cuidarte">
+<meta property="og:description" content="La ternura, el step out, el baño sonoro en grupo, cómo acompañar el llanto en presencia y dos prácticas de presencia en la emoción.">
+<meta property="og:url" content="https://cuidarte-pdc.sonofrecuencia.cl/sesion-4.html">
+<meta property="og:image" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<meta property="og:image:secure_url" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuidarte, taller de bienestar del Punto de Cultura Plaza Bogotá">
+<meta property="og:locale" content="es_CL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<link rel="icon" href="img/logo_sono_circulo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#13301e; --green:#2b5a35; --sage:#dfe6d6; --cream:#f8f4ec;
+  --gold:#a8844b; --gold-soft:#d9c39a; --ink:#1c241e; --muted:#5b655d; --line:#ddd2bd;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--forest)}
+h2{font-size:clamp(32px,5vw,46px)}
+h3{font-size:clamp(24px,3.4vw,30px)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.kicker{font-size:12px;letter-spacing:4px;font-weight:600;color:var(--gold);text-transform:uppercase;margin-bottom:12px;display:block}
+.lead{font-family:var(--serif);font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:var(--ink)}
+section{padding:72px 0}
+
+/* barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(19,48,30,.96);backdrop-filter:blur(6px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.top img{height:30px}
+.top nav{display:flex;gap:20px;font-size:13px;font-weight:500}
+.top nav a{color:var(--cream);text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--gold-soft)}
+@media(max-width:700px){.top nav{display:none}}
+
+/* portada */
+.hero{position:relative;min-height:min(78vh,760px);display:flex;align-items:flex-end;color:var(--cream);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,48,30,.25) 0%,rgba(19,48,30,.62) 38%,rgba(19,48,30,.96) 100%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,rgba(19,48,30,.45) 0%,rgba(19,48,30,.8) 35%,rgba(19,48,30,.97) 100%)}}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px}
+.hero h1{color:var(--cream);font-size:clamp(46px,8vw,86px)}
+.hero h1 em{color:var(--gold-soft)}
+.hero p.sub{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);max-width:640px;margin-top:14px;line-height:1.35}
+.datos{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14px;font-weight:500}
+.datos span{display:flex;align-items:center;gap:8px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:600;font-size:14px;text-decoration:none;letter-spacing:.3px}
+.btn.gold{background:var(--gold);color:#fff}
+.btn.line{border:1.5px solid var(--gold-soft);color:var(--cream)}
+.btn.verde{background:var(--forest);color:var(--cream)}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.intro img{border-radius:180px 180px 18px 18px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 20px 50px rgba(19,48,30,.25)}
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.pilares div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;font-size:13px;font-weight:600;color:var(--green)}
+.pilares b{display:block;font-size:26px;margin-bottom:4px}
+@media(max-width:800px){.intro{grid-template-columns:1fr}.intro img{max-width:380px;margin:0 auto}.pilares{grid-template-columns:repeat(2,1fr)}}
+
+/* sesiones */
+.sesiones{background:var(--sage)}
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:860px){.grid6{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid6{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:18px;padding:24px;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;min-height:210px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(19,48,30,.15)}
+.card .n{font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1}
+.card .f{font-size:12px;letter-spacing:2px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:8px 0 6px}
+.card h3{font-size:25px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.card .ir{margin-top:auto;padding-top:14px;font-weight:600;font-size:14px;color:var(--green)}
+.card.abierta{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.card.abierta h3{color:var(--cream)} .card.abierta p,.card.abierta .f{color:var(--sage)} .card.abierta .ir{color:var(--gold-soft)}
+.card.cerrada{opacity:.75;background:rgba(255,255,255,.55)}
+.card.cerrada .candado{position:absolute;top:22px;right:22px;font-size:20px}
+
+/* herramientas y bosque */
+.lista-h{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+@media(max-width:700px){.lista-h{grid-template-columns:1fr}}
+.h{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.h .ic{font-size:28px;line-height:1}
+.h b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.h span{font-size:14px;color:var(--muted)}
+.h.pronto{opacity:.6}
+.bosque{background:var(--forest);color:var(--cream)}
+.bosque h2{color:var(--cream)}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.galeria img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+@media(max-width:700px){.galeria{grid-template-columns:repeat(2,1fr)}}
+
+/* páginas internas */
+.cabecera{background:var(--forest);color:var(--cream);padding:64px 0 54px}
+.cabecera h1{color:var(--cream);font-size:clamp(40px,6.5vw,68px)}
+.cabecera h1 em{color:var(--gold-soft)}
+.cabecera p{font-family:var(--serif);font-size:22px;color:var(--sage);margin-top:10px;max-width:700px}
+.volver{display:inline-block;margin-bottom:20px;color:var(--gold-soft);font-size:14px;text-decoration:none;font-weight:600}
+.bloque{padding:52px 0;border-bottom:1px solid var(--line)}
+.bloque:last-of-type{border-bottom:0}
+.bloque .wrap{max-width:780px}
+.bloque p+p{margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:7px 15px;font-size:14px;font-weight:500}
+.audio{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:20px;box-shadow:0 10px 30px rgba(19,48,30,.08)}
+.audio b{font-family:var(--serif);font-size:24px;color:var(--forest);display:block}
+.audio small{color:var(--muted)}
+.audio audio{width:100%;margin-top:14px}
+ol.pasos{margin:16px 0 0 20px}
+ol.pasos li{margin-bottom:6px}
+.nota{background:var(--sage);border-left:4px solid var(--gold);border-radius:0 14px 14px 0;padding:16px 20px;margin-top:20px;font-size:15px}
+.credito{font-size:13px;color:var(--muted);margin-top:22px;font-style:italic}
+blockquote{font-family:var(--serif);font-size:24px;line-height:1.35;color:var(--green);font-style:italic;border-left:3px solid var(--gold-soft);padding-left:18px;margin:22px 0}
+blockquote cite{display:block;font-family:var(--sans);font-size:13px;font-style:normal;color:var(--muted);margin-top:6px}
+.calc{background:var(--forest);color:var(--cream);border-radius:22px;padding:28px;margin-top:20px}
+.calc label{font-weight:600;font-size:15px}
+.calc input{width:110px;font:600 22px var(--sans);padding:8px 12px;border-radius:12px;border:0;margin:0 10px;text-align:center}
+.calc .res{margin-top:18px;font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--sage)}
+.calc .res b{color:var(--gold-soft);font-size:32px}
+.preguntas li{margin:10px 0 0 20px}
+
+/* pie */
+footer{background:var(--ink);color:var(--sage);padding:46px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+footer .logos{display:flex;gap:22px;align-items:center}
+footer .logos img{height:34px}
+footer .logos img.pdc{height:64px;background:#fff;border-radius:50%;padding:3px}
+footer a{color:var(--gold-soft)}
+footer p+p{margin-top:6px}
+
+/* metodologías */
+.metodos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+@media(max-width:860px){.metodos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.metodos{grid-template-columns:1fr}}
+.metodo{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.metodo .ic{font-size:30px;line-height:1}
+.metodo h3{font-size:24px;margin:10px 0 6px}
+.metodo p{font-size:14px;color:var(--muted)}
+
+/* redes y logos */
+.redes{display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:26px}
+.redes a{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream);background:rgba(255,255,255,.1);border:1px solid rgba(217,195,154,.45);border-radius:60px;padding:6px 18px 6px 6px}
+.redes a:hover{background:rgba(255,255,255,.18)}
+.redes img{width:48px;height:48px;border-radius:50%;background:#fff;object-fit:contain;padding:2px}
+.redes span{display:flex;align-items:center;gap:6px;font-weight:600;font-size:14px;flex-wrap:wrap}
+.redes small{display:block;width:100%;font-weight:500;font-size:11px;letter-spacing:1px;color:var(--gold-soft);text-transform:uppercase}
+/* galería de sesión */
+.fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.fotos button{border:0;padding:0;cursor:zoom-in;border-radius:14px;overflow:hidden;background:none}
+.fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .3s}
+.fotos button:hover img{transform:scale(1.04)}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.videos video{width:100%;border-radius:14px;background:#000;aspect-ratio:9/16;object-fit:cover}
+@media(max-width:560px){.fotos{grid-template-columns:repeat(2,1fr)}}
+.visor{position:fixed;inset:0;background:rgba(10,20,14,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.visor.on{display:flex}
+.visor img{max-width:100%;max-height:90vh;border-radius:10px}
+.visor button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:38px;cursor:pointer;line-height:1}
+
+/* destacado y muro */
+.destacado{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.destacado img{border-radius:16px;width:100%;cursor:zoom-in}
+@media(max-width:700px){.destacado{grid-template-columns:1fr}}
+.frase{font-family:var(--serif);font-size:clamp(28px,4.4vw,40px);line-height:1.15;color:var(--forest);text-align:center;padding:30px 10px;font-style:italic}
+.frase b{color:var(--gold);font-weight:600}
+.muro{background:var(--sage);border-radius:22px;padding:26px;margin-top:22px}
+.muro-lista{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+@media(max-width:600px){.muro-lista{grid-template-columns:1fr}}
+.reflexion{background:#fff;border-radius:16px;padding:18px 20px;border:1px solid var(--line)}
+.reflexion p{font-family:var(--serif);font-size:20px;line-height:1.4;color:var(--ink);white-space:pre-line}
+.reflexion span{display:block;margin-top:8px;font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.muro-vacio{font-size:15px;color:var(--muted);margin-top:14px}
+.btn[aria-disabled="true"]{opacity:.55;pointer-events:none}
+
+/* sesión 3 */
+.relato{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-top:20px;font-family:var(--serif);font-size:20px;line-height:1.55;box-shadow:0 10px 30px rgba(19,48,30,.06)}
+.relato p+p{margin-top:12px}
+.emociones{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+@media(max-width:700px){.emociones{grid-template-columns:1fr}}
+.emo{background:#fff;border:1px solid var(--line);border-left:6px solid var(--c);border-radius:16px;padding:0;overflow:hidden}
+.emo summary{cursor:pointer;list-style:none;position:relative;padding:16px 46px 16px 18px;font-family:var(--serif);font-size:24px;font-weight:600;color:var(--forest);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.emo summary::-webkit-details-marker{display:none}
+.emo summary:after{content:"+";position:absolute;right:18px;top:15px;font-family:var(--sans);font-size:22px;color:var(--gold)}
+.emo[open] summary:after{content:"–"}
+.emo summary small{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.emo .dot{width:14px;height:14px;border-radius:50%;background:var(--c);flex:none}
+.emo dl{padding:0 18px 16px}
+.emo dt{font-weight:600;font-size:14px;color:var(--green);margin-top:10px}
+.emo dd{font-size:15px;color:var(--ink)}
+.ideas{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+@media(max-width:700px){.ideas{grid-template-columns:1fr}}
+.idea{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.idea b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest);line-height:1.2}
+.idea p{font-size:15px;color:var(--muted);margin-top:6px}
+.ejercicios{display:grid;gap:12px;margin-top:24px}
+.ej{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.ej .num{flex:none;width:40px;height:40px;border-radius:50%;background:var(--forest);color:var(--gold-soft);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:24px;font-weight:600}
+.ej b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest);line-height:1.2}
+.ej p{font-size:15px;color:var(--ink);margin-top:4px}
+.ej p b{display:inline;font-family:inherit;font-size:inherit;font-weight:700;color:inherit;line-height:inherit}
+.grupal{width:100%;border-radius:18px;margin-top:22px;cursor:zoom-in}
+.tabla-emo{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.tabla-emo>summary{cursor:pointer;padding:14px 18px;font-weight:600;color:var(--green);font-size:15px}
+.tabla-scroll{overflow-x:auto}
+.tabla-emo table{border-collapse:collapse;min-width:720px;width:100%;font-size:13.5px;line-height:1.5}
+.tabla-emo th,.tabla-emo td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top;text-align:left}
+.tabla-emo thead th{background:var(--forest);color:var(--cream);font-size:13px;border-top:0}
+.tabla-emo tbody th{font-family:var(--serif);font-size:19px;color:var(--forest);white-space:nowrap}
+.tabla-emo tbody th small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:600}
+.resumen{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin-top:22px;background:var(--forest);color:var(--cream);border-radius:22px;padding:22px}
+.resumen video{width:100%;aspect-ratio:9/16;border-radius:16px;background:#000;object-fit:cover}
+.resumen h3{color:var(--cream)} .resumen p{color:var(--sage)!important}
+@media(max-width:700px){.resumen{grid-template-columns:1fr}.resumen video{max-width:320px;margin:0 auto}}
+
+/* sesión 4 */
+.compara{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+@media(max-width:700px){.compara{grid-template-columns:1fr}}
+.compara>div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.compara .no{border-top:5px solid #c9a7a0}
+.compara .si{border-top:5px solid var(--green)}
+.compara b{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.compara ul{margin:8px 0 0 20px;font-size:15px}
+.compara li{margin-top:6px}
+.funciones{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+@media(max-width:800px){.funciones{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.funciones{grid-template-columns:1fr}}
+.fn{background:#fff;border:1px solid var(--line);border-left:6px solid var(--c);border-radius:16px;padding:16px 18px}
+.fn b{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.fn p{font-size:15px;color:var(--ink);margin-top:4px}
+.fotos.cuatro{grid-template-columns:repeat(4,1fr)}
+@media(max-width:700px){.fotos.cuatro{grid-template-columns:repeat(2,1fr)}}
+.texto-cita{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-top:20px;font-family:var(--serif);font-size:20px;line-height:1.55;box-shadow:0 10px 30px rgba(19,48,30,.06)}
+.texto-cita p+p{margin-top:12px}
+.texto-cita cite{display:block;font-family:var(--sans);font-size:14px;font-style:normal;font-weight:600;color:var(--gold);margin-top:14px;text-align:right}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a href="index.html"><img src="img/logo_blanco.png" alt="Sonofrecuencia"></a>
+  <nav><a href="#vivimos">Lo que vivimos</a><a href="#acompanar">Acompañar</a><a href="#energia">Las emociones</a><a href="#galeria">Galería</a><a href="#practica">Práctica</a><a href="#ejercicios">Ejercicios</a></nav>
+</div></header>
+
+<div class="cabecera"><div class="wrap">
+  <a class="volver" href="index.html#sesiones">← Todas las sesiones</a>
+  <span class="kicker" style="color:var(--gold-soft)">Sesión 4 · Sábado 14 de noviembre</span>
+  <h1>Darle espacio a <em>lo que siento</em></h1>
+  <p>La ternura, el step out, el baño sonoro en grupo y el arte de acompañar las emociones en un lugar seguro.</p>
+  <div class="redes">
+      <a href="https://instagram.com/puntodecultura_plazabogota" target="_blank" rel="noopener"><img src="img/logo_pdc.png" alt="Logo Punto de Cultura Plaza Bogotá"><span><small>Punto de Cultura Plaza Bogotá</small><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@puntodecultura_plazabogota</span></a>
+      <a href="https://instagram.com/sonofrecuencia_musicoterapia" target="_blank" rel="noopener"><img src="img/logo_sono_circulo.png" alt="Logo Sonofrecuencia"><span><small>Sonofrecuencia · Musicoterapia</small><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@sonofrecuencia_musicoterapia</span></a>
+    </div>
+</div></div>
+
+<div class="bloque" id="vivimos"><div class="wrap">
+  <span class="kicker">📝 Lo que vivimos</span>
+  <h2>Un encuentro intenso y lleno de ternura</h2>
+  <p style="margin-top:16px">Esta vez nos juntamos en <b>Madrid 1874</b>, a dos cuadras de nuestra sede, y el grupo llegó igual con todo. 💚 Partimos, como siempre, <b>jugando</b>: para reírnos, soltar el cuerpo y volver a encontrarnos.</p>
+  <p>Luego volvimos al <b>Alba Emoting</b>. Practicamos el patrón del <b>amor ternura</b> (la respiración lenta como olas en la orilla, la sonrisa suave, el cuerpo que se acerca para cuidar) y aprendimos por fin el <b>step out</b>, la forma de soltar una emoción y volver al centro. También repasamos juntos las otras emociones básicas y <b>para qué nos sirve cada una</b>.</p>
+  <p>Después vino la <b>exploración de instrumentos</b>: cuencos, campanas, palos de lluvia, tambores… cada uno fue descubriendo sonidos y eligiendo los suyos. Con ellos nos regalamos un <b>baño sonoro en grupo</b>: un grupo se lo daba al otro, con la consigna de <b>contactar con la ternura, el cuidado, el amor y el bienestar</b>.</p>
+  <div class="frase">"Dejar que el sonido nos <b>cuide</b>"</div>
+  <p>Fue un momento muy profundo. Algunas personas <b>lloraron</b>, otras se abrieron a compartir. Aparecieron <b>recuerdos de la infancia</b>, personas que nos han mirado con ternura, la <b>naturaleza</b>, <b>lugares donde nos hemos sentido seguros</b>… Gracias a cada uno por la confianza y por permitirse sentir. 🙏</p>
+  <div class="chips"><span>🎲 Juego</span><span>🌸 Amor ternura</span><span>🔄 Step out</span><span>🧭 Las funciones de las emociones</span><span>🥁 Exploración de instrumentos</span><span>🔔 Baño sonoro en grupo</span></div>
+  <div class="destacado">
+    <img src="img/sesion4/s4-03.jpg" alt="Un grupo regala el baño sonoro al otro, sentado con los ojos cerrados" data-src="img/sesion4/s4-03.jpg" class="ampliar">
+    <div><span class="kicker">🔔 El baño sonoro</span><h3>Un grupo cuida al otro</h3><p style="margin-top:10px;color:var(--muted)">Mientras unos cerraban los ojos y se dejaban llevar, los otros tocaban los instrumentos a su alrededor con suavidad y cariño. Después cambiamos de lugar. Dar y recibir cuidado: las dos caras de la ternura.</p></div>
+  </div>
+  <div class="nota">📖 Esta vez el tiempo se nos fue en lo que estaba pasando, y estuvo bien así. El <b>cuento</b> y la <b>arteterapia</b> que teníamos preparados quedan para el próximo encuentro.</div>
+</div></div>
+
+<div class="bloque" id="acompanar"><div class="wrap">
+  <span class="kicker">🤝 Lo que aprendimos juntos</span>
+  <h2>Cuando alguien llora: acompañar en presencia</h2>
+  <p style="margin-top:16px">Cuando vemos llorar a alguien, muchas veces nos incomodamos y salimos al rescate: <i>"pobrecita, no llores"</i>, <i>"ya, ya, no es para tanto"</i>, <i>"mira el lado bueno"</i>. Lo hacemos con cariño, pero sin querer le estamos diciendo a la otra persona que <b>su emoción no tiene lugar</b>.</p>
+  <p>En el taller acordamos algo distinto: cuando alguien llora, <b>lo acompañamos en presencia</b>. No intentamos aplacar su llanto ni apurarlo. Simplemente estamos ahí.</p>
+  <blockquote>No hace falta apagar la emoción del otro. Basta con estar.</blockquote>
+  <div class="compara">
+    <div class="no"><b>En vez de…</b><ul><li>"No llores."</li><li>"Ya pasó, no es para tanto."</li><li>Cambiar rápido de tema o hacer una broma.</li><li>Dar consejos que nadie pidió.</li></ul></div>
+    <div class="si"><b>Podemos…</b><ul><li>Quedarnos en silencio, respirando tranquilos.</li><li>Mirar con amabilidad, sin apuro.</li><li>Decir: "Estoy aquí", "Tómate tu tiempo".</li><li>Ofrecer un pañuelo, o preguntar: "¿Te puedo tomar la mano?"</li></ul></div>
+  </div>
+  <p style="margin-top:20px"><b>¿Por qué es tan importante?</b> Porque llorar es justamente eso que necesitamos aprender: <b>expresar las emociones en un espacio seguro</b>. Muchas veces no tenemos esos espacios en la casa, en el trabajo o con la familia. Por eso el taller puede ser ese lugar: <b>aprovechémoslo</b>. Lo que se dice y se siente en el grupo, se cuida en el grupo.</p>
+  <div class="nota">💧 Las lágrimas no son un problema que hay que resolver. Son una emoción que está haciendo su trabajo: soltar, aliviar, limpiar.</div>
+</div></div>
+
+<div class="bloque" id="energia"><div class="wrap">
+  <span class="kicker">⚡ Para recordar</span>
+  <h2>Las emociones son energía y tienen una función</h2>
+  <p style="margin-top:16px">Desde el <b>Alba Emoting</b> entendemos que las emociones son <b>energía en movimiento</b>. Ninguna es "buena" o "mala": todas cumplen una <b>función adaptativa</b>, nos ayudan a vivir, a protegernos y a relacionarnos.</p>
+  <div class="funciones">
+    <div class="fn" style="--c:#e08a3c"><b>🌸 Ternura</b><p>Cuidar y dejarnos cuidar. Crea vínculo, cercanía y protección.</p></div>
+    <div class="fn" style="--c:#3e6fb5"><b>☀️ Alegría</b><p>Celebrar, compartir y conectar con otros. Nos da vitalidad.</p></div>
+    <div class="fn" style="--c:#e58fb0"><b>💧 Tristeza</b><p>Soltar lo que perdimos, mirar hacia dentro y pedir apoyo.</p></div>
+    <div class="fn" style="--c:#d6453d"><b>🔥 Rabia</b><p>Poner límites, defender lo que nos importa y darnos fuerza para actuar.</p></div>
+    <div class="fn" style="--c:#e7c13b"><b>⚠️ Miedo</b><p>Alertarnos del peligro y protegernos. Nos ayuda a prevenir.</p></div>
+    <div class="fn" style="--c:#7b4fa0"><b>🌹 Erotismo</b><p>Disfrutar, gozar de los sentidos y de la vida, y entregarnos al placer.</p></div>
+  </div>
+  <p style="margin-top:22px">Cuando una emoción aparece y no le damos el espacio que necesita, esa energía no desaparece: se queda guardada. Y muchas veces el cuerpo la termina expresando a su manera, es decir, <b>somatizamos</b>:</p>
+  <div class="chips"><span>🤕 Dolores de cabeza</span><span>🫃 Dolores de estómago</span><span>🦴 Contracturas y tensión</span><span>🤧 Bajas defensas</span><span>😴 Cansancio y mal dormir</span></div>
+
+  <h3 style="margin-top:30px">¿Y si no puedo expresarla en ese momento?</h3>
+  <p style="margin-top:10px">Hay momentos en que no podemos: estamos en el trabajo, cuidando a un hijo, a un nieto o a una persona enferma, o <b>co-regulando</b> a otros (sosteniendo su calma). Está bien guardar la emoción por un rato. Lo importante es <b>no olvidarla</b>:</p>
+  <div class="ejercicios">
+    <div class="ej"><span class="num">1</span><div><b>Busca tu momento</b><p>Durante el día o la semana, regálate un rato para ti, aunque sean 10 minutos.</p></div></div>
+    <div class="ej"><span class="num">2</span><div><b>Busca tu lugar seguro</b><p>Un lugar tranquilo donde te sientas en calma: tu pieza, la ducha, una plaza, el auto estacionado, un rincón con plantas…</p></div></div>
+    <div class="ej"><span class="num">3</span><div><b>Contacta con la emoción</b><p>Respira, recuerda lo que pasó y pregúntate: ¿qué siento?, ¿dónde lo siento en el cuerpo? Déjala estar, sin juzgarla.</p></div></div>
+    <div class="ej"><span class="num">4</span><div><b>Dale espacio para que cumpla su función</b><p>Si necesitas llorar, llora. Si necesitas moverte, muévete. Si quieres, escribe, dibuja o toca un instrumento. Al terminar, haz un <b>step out</b> y vuelve al centro.</p></div></div>
+  </div>
+  <div class="nota">🎧 Para eso te dejamos dos prácticas guiadas más abajo: son <b>dos alternativas</b> para contactar con tus emociones en un lugar seguro. Elige la que más te acomode.</div>
+</div></div>
+
+<div class="bloque" id="ternura"><div class="wrap">
+  <span class="kicker">🌸 Alba Emoting</span>
+  <h2>El amor ternura y el step out</h2>
+  <div class="emociones" style="margin-top:20px">
+    <details class="emo" style="--c:#e08a3c" open><summary><span class="dot"></span>Ternura <small>Cuidar y dejarse cuidar</small></summary>
+      <dl><dt>🌬️ Respiración</dt><dd>Abdominal, lenta y solo por la nariz. Continua y rítmica, como las olas del mar en la orilla: casi no se nota dónde empieza y dónde termina cada ciclo.</dd>
+      <dt>🧍 Postura</dt><dd>Relajada, con un tono tranquilo pero activo para sostener y proteger. El cuerpo se acerca a lo que cuida y la cabeza se inclina un poco hacia un lado.</dd>
+      <dt>🙂 Rostro</dt><dd>Mirada contemplativa, sin juicio. Rostro relajado, con una sonrisa suave que sube las comisuras; los párpados suben un poco y achican los ojos.</dd></dl></details>
+    <details class="emo" style="--c:#7a8b7f" open><summary><span class="dot"></span>Step out <small>Volver al centro</small></summary>
+      <dl><dt>1. Respira y sube</dt><dd>Inhala profundo por la nariz mientras subes los brazos por delante del cuerpo.</dd>
+      <dt>2. Exhala y baja</dt><dd>Suelta el aire por la boca mientras bajas los brazos. Repite unas tres veces.</dd>
+      <dt>3. Suelta la cara</dt><dd>Relaja la frente, la mandíbula y los ojos. Puedes masajear suavemente el rostro.</dd>
+      <dt>4. Mueve el cuerpo</dt><dd>Sacude manos y hombros, cambia de postura y apoya bien los pies.</dd>
+      <dt>5. Mira al frente</dt><dd>Con una respiración tranquila y la mirada neutra, vuelves al centro de la flor.</dd></dl></details>
+  </div>
+  <p style="margin-top:20px">¿Quieres repasar las demás emociones? Las encuentras con su respiración, postura y rostro en la <a href="sesion-3.html#alba">sesión 3</a>.</p>
+  <p class="credito">Alba Emoting es un método desarrollado por la Dra. Susana Bloch. Para profundizar: <i>Al alba de las emociones</i> (Susana Bloch).</p>
+</div></div>
+
+<div class="bloque" id="galeria"><div class="wrap">
+  <span class="kicker">📸 Galería</span>
+  <h2>Así lo vivimos</h2>
+  <p style="margin-top:12px">Algunos momentos del cuarto encuentro. Toca una foto para verla en grande.</p>
+  <div class="nota">🙏 Si apareces en alguna foto o video y prefieres que no esté publicada, avísanos por el grupo de WhatsApp o por interno y la sacamos de inmediato, sin problema.</div>
+  <div class="fotos cuatro">
+    <button type="button" data-src="img/sesion4/s4-01.jpg"><img src="img/sesion4/s4-01.jpg" alt="Preparando los cuencos y los instrumentos" loading="lazy"></button>
+    <button type="button" data-src="img/sesion4/s4-02.jpg"><img src="img/sesion4/s4-02.jpg" alt="Explorando los instrumentos alrededor del grupo" loading="lazy"></button>
+    <button type="button" data-src="img/sesion4/s4-03.jpg"><img src="img/sesion4/s4-03.jpg" alt="Baño sonoro: un grupo cuida al otro" loading="lazy"></button>
+    <button type="button" data-src="img/sesion4/s4-04.jpg"><img src="img/sesion4/s4-04.jpg" alt="Sonidos de ternura y bienestar" loading="lazy"></button>
+  </div>
+  <p style="margin-top:22px"><b>🔔 El baño sonoro en grupo</b></p>
+  <div class="videos">
+    <video controls preload="none" playsinline poster="img/sesion4/s4-video-1.jpg" src="video/s4-video-1.mp4"></video>
+    <video controls preload="none" playsinline poster="img/sesion4/s4-video-2.jpg" src="video/s4-video-2.mp4"></video>
+  </div>
+  <img class="grupal ampliar" src="img/sesion4/s4-grupo.jpg" data-src="img/sesion4/s4-grupo.jpg" alt="Foto grupal del cuarto encuentro" loading="lazy">
+</div></div>
+
+<div class="visor" id="visor" role="dialog" aria-label="Foto ampliada"><button type="button" aria-label="Cerrar">×</button><img alt=""></div>
+
+<div class="bloque" id="practica"><div class="wrap">
+  <span class="kicker">🎧 Práctica de la semana</span>
+  <h2>Presencia en la emoción</h2>
+  <p style="margin-top:16px">Dos prácticas guiadas, <b>dos alternativas</b> para contactar con tus emociones en un lugar seguro. No se trata de cambiar lo que sientes, sino de <b>respirar, acoger y sostener</b> la emoción con amabilidad, para que pueda moverse y cumplir su función.</p>
+  <div class="audio">
+    <b>Presencia en la emoción I · Nombrar lo que siento</b><small>Práctica guiada · 12 min · Escuela Española de Desarrollo Transpersonal</small>
+    <audio controls preload="none" src="audio/presencia-emocion-1.mp3"></audio>
+    <p style="margin-top:12px;font-size:15px;color:var(--muted)">Desde la respiración, te invita a darte cuenta de las emociones que surgen y a <strong>nombrarlas con amabilidad y sin juicio</strong>: "me siento ansioso… irritada… feliz… triste…". Ideal para cuando sientes "algo" pero no sabes bien qué es.</p>
+  </div>
+  <div class="audio">
+    <b>Presencia en la emoción II · Aquietar las aguas</b><small>Práctica guiada · 13 min · Escuela Española de Desarrollo Transpersonal</small>
+    <audio controls preload="none" src="audio/presencia-emocion-2.mp3"></audio>
+    <p style="margin-top:12px;font-size:15px;color:var(--muted)">Imagina tu conciencia como un <strong>lago de aguas calmas</strong> que se agita cuando llegan las emociones. Aprenderás a observarlas desde la orilla, sin hundirte en ellas, hasta que el agua vuelva a aquietarse. Ideal para cuando una emoción te desborda.</p>
+  </div>
+  <p style="margin-top:20px"><b>Cómo practicar:</b></p>
+  <ol class="pasos">
+    <li>Busca tu <b>lugar seguro</b>: un rincón tranquilo donde nadie te interrumpa. Siéntate cómodo o recuéstate.</li>
+    <li>Elige el audio que más te acomode ese día. Escúchalo <b>al menos 3 veces esta semana</b>.</li>
+    <li>Si aparecen lágrimas o recuerdos, déjalos estar. Acompáñate como acompañamos a otros en el taller: <b>en presencia, sin apuro</b>.</li>
+    <li>Al terminar, haz un <b>step out</b> y anota en tu libreta qué sentiste y dónde lo sentiste en el cuerpo.</li>
+  </ol>
+  <p class="credito">Audios de la Escuela Española de Desarrollo Transpersonal (escuelatranspersonal.com), del programa "20 enfoques de atención hacia la Esencia" (Círculo de las emociones, enfoques 1 y 2), utilizados con su autorización.</p>
+  <div class="btns" style="margin-top:20px"><a class="btn verde" href="lectura-4.html">Leer más: "Presencia en la emoción" →</a></div>
+</div></div>
+
+<div class="bloque" id="ejercicios"><div class="wrap">
+  <span class="kicker">✏️ Para la semana</span>
+  <h2>Ejercicios para darle espacio a lo que sientes</h2>
+  <div class="ejercicios">
+    <div class="ej"><span class="num">1</span><div><b>Mi lugar seguro</b><p>Elige un lugar (real o imaginario) donde te sientas a salvo y en calma. Puede ser uno de los que aparecieron en el baño sonoro. Dibújalo o descríbelo en tu libreta, con sus colores, sonidos y olores. Vuelve a él cuando lo necesites.</p></div></div>
+    <div class="ej"><span class="num">2</span><div><b>Una cita con mi emoción</b><p>Si esta semana guardas una emoción porque no era el momento, agéndate una cita con ella: busca tu lugar seguro, escucha uno de los audios y dale espacio.</p></div></div>
+    <div class="ej"><span class="num">3</span><div><b>¿Cómo me siento?</b><p>Tres veces al día, detente y pregúntate: <i>¿qué siento ahora?, ¿dónde lo siento en el cuerpo?</i> Ponle nombre con amabilidad, sin juzgarlo. Anótalo.</p></div></div>
+    <div class="ej"><span class="num">4</span><div><b>Quien me mira con ternura</b><p>Recuerda a una persona (o un animal, o un lugar de la naturaleza) que te haga sentir ternura. Respira como en el patrón de la ternura y deja que ese recuerdo te abrace. Si quieres, escríbele una carta, aunque no la envíes.</p></div></div>
+    <div class="ej"><span class="num">5</span><div><b>Acompañar sin rescatar</b><p>Si alguien cercano te comparte algo difícil, practica escuchar sin aconsejar ni apurar: <i>"Estoy aquí"</i>, <i>"Tómate tu tiempo"</i>. Observa qué te pasa a ti cuando lo haces.</p></div></div>
+    <div class="ej"><span class="num">6</span><div><b>Step out cada día</b><p>Cuando sientas una emoción intensa, después de darle espacio, haz tres respiraciones del step out para volver a tu centro.</p></div></div>
+  </div>
+  <div class="nota">📅 <b>Próximo encuentro: sábado 21 de noviembre, 16:00 hrs</b>, de vuelta en nuestra sede de <b>Madrid 1648</b>. Te esperamos con un cuento y una actividad de arteterapia muy especial. 🐘🪶</div>
+</div></div>
+
+<div class="bloque" id="resonando"><div class="wrap">
+  <span class="kicker">💬 Muro de reflexiones</span>
+  <h2>¿Qué quedó resonando en ti?</h2>
+  <p style="margin-top:16px">Del cuarto encuentro (la ternura, el step out, el baño sonoro, los recuerdos y las emociones que aparecieron…), <b>¿qué se quedó contigo?</b> Compártelo aquí: una palabra, una frase o lo que necesites decir.</p>
+  <div class="muro">
+    <a class="btn verde" id="muro-btn" href="#" target="_blank" rel="noopener" aria-disabled="true">✍️ Compartir mi reflexión</a>
+    <div class="muro-lista" id="muro-lista"></div>
+    <p class="muro-vacio" id="muro-vacio">Muy pronto podrás dejar aquí tu reflexión. Mientras tanto, compártela en el grupo de WhatsApp 💚</p>
+  </div>
+  <p class="credito">Las reflexiones se publican de forma anónima. Antes de aparecer aquí pueden tardar unos minutos. Las de la semana anterior están en la <a href="sesion-3.html#resonando">sesión 3</a>.</p>
+</div></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><b style="color:var(--cream)">Cuidarte</b> · Taller de Bienestar · Punto de Cultura Plaza Bogotá</p>
+      <p><a href="index.html">Volver al inicio</a> · <a href="sesion-1.html">Sesión 1</a> · <a href="sesion-2.html">Sesión 2</a> · <a href="sesion-3.html">Sesión 3</a> · <a href="sesion-4.html">Sesión 4</a></p>
+      <p style="margin-top:14px;font-size:12px;opacity:.8">Parte del material de estudio se basa en la Escuela Española de Desarrollo Transpersonal, con su autorización. Alba Emoting es un método desarrollado por la Dra. Susana Bloch.</p>
+    </div>
+    <div class="logos"><img src="img/logo_blanco.png" alt="Sonofrecuencia"><img class="pdc" src="img/logo_pdc.png" alt="Punto de Cultura Plaza Bogotá"></div>
+  </div>
+</footer>
+<script>
+  var visor = document.getElementById('visor'), vimg = visor.querySelector('img');
+  document.querySelectorAll('.fotos button, img.ampliar').forEach(function (b) {
+    b.addEventListener('click', function () { vimg.src = b.getAttribute('data-src'); vimg.alt = (b.querySelector('img') || b).alt; visor.classList.add('on'); });
+  });
+  visor.addEventListener('click', function () { visor.classList.remove('on'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') visor.classList.remove('on'); });
+</script>
+<script>
+  // Muro de reflexiones: mismo formulario y hoja de siempre; aquí se muestran solo las enviadas desde el 14 de noviembre.
+  var MURO_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSeDit1-IauxY_ZUzXTd0IutGoEeQ9AgMBAJA1IZ_S8fdddw9A/viewform';
+  var MURO_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRYl1AWfExalxfec5N8X3LCG1WyaMDLuciedAsiH8rYawfebvo1K2nujP2wkDQ2GZP0DBr-JEXDkHF5/pub?output=csv';
+  var MURO_DESDE = new Date(2026, 10, 14);
+  (function () {
+    var btn = document.getElementById('muro-btn'), lista = document.getElementById('muro-lista'), vacio = document.getElementById('muro-vacio');
+    if (MURO_FORM) { btn.href = MURO_FORM; btn.removeAttribute('aria-disabled'); vacio.textContent = 'Sé la primera persona en compartir lo que quedó resonando 🌱'; }
+    if (!MURO_CSV) return;
+    function csv(t) {
+      var filas = [], f = [], c = '', q = false;
+      for (var i = 0; i < t.length; i++) {
+        var ch = t[i];
+        if (q) { if (ch === '"') { if (t[i + 1] === '"') { c += '"'; i++; } else q = false; } else c += ch; }
+        else if (ch === '"') q = true;
+        else if (ch === ',') { f.push(c); c = ''; }
+        else if (ch === '\n') { f.push(c); filas.push(f); f = []; c = ''; }
+        else if (ch !== '\r') c += ch;
+      }
+      if (c || f.length) { f.push(c); filas.push(f); }
+      return filas;
+    }
+    function fecha(s) { var m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})/.exec((s || '').trim()); return m ? new Date(+m[3], +m[2] - 1, +m[1]) : null; }
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]; }); }
+    fetch(MURO_CSV + (MURO_CSV.indexOf('?') > -1 ? '&' : '?') + 't=' + Date.now()).then(function (r) { return r.text(); }).then(function (t) {
+      var filas = csv(t).slice(1).filter(function (f) { var d = fecha(f[0]); return f[1] && f[1].trim() && (!d || d >= MURO_DESDE); }).reverse();
+      if (!filas.length) return;
+      vacio.style.display = 'none';
+      lista.innerHTML = filas.map(function (f) {
+        return '<div class="reflexion"><p>' + esc(f[1].trim()) + '</p><span>' + esc((f[2] || '').trim() || 'Anónimo') + '</span></div>';
+      }).join('');
+    }).catch(function () {});
+  })();
+</script>
+</body>
+</html>
