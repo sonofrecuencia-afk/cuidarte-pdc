@@ -437,7 +437,7 @@ footer p+p{margin-top:6px}
   <div class="wrap">
     <div>
       <p><b style="color:var(--cream)">Cuidarte</b> · Taller de Bienestar · Punto de Cultura Plaza Bogotá</p>
-      <p><a href="index.html">Volver al inicio</a> · <a href="sesion-1.html">Sesión 1</a> · <a href="sesion-2.html">Sesión 2</a> · <a href="sesion-3.html">Sesión 3</a> · <a href="sesion-4.html">Sesión 4</a></p>
+      <p><a href="index.html">Volver al inicio</a> · <a href="sesion-1.html">Sesión 1</a> · <a href="sesion-2.html">Sesión 2</a> · <a href="sesion-3.html">Sesión 3</a> · <a href="sesion-4.html">Sesión 4</a> · <a href="sesion-5.html">Sesión 5 →</a></p>
       <p style="margin-top:14px;font-size:12px;opacity:.8">Parte del material de estudio se basa en la Escuela Española de Desarrollo Transpersonal, con su autorización. Alba Emoting es un método desarrollado por la Dra. Susana Bloch.</p>
     </div>
     <div class="logos"><img src="img/logo_blanco.png" alt="Sonofrecuencia"><img class="pdc" src="img/logo_pdc.png" alt="Punto de Cultura Plaza Bogotá"></div>
@@ -452,10 +452,10 @@ footer p+p{margin-top:6px}
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') visor.classList.remove('on'); });
 </script>
 <script>
-  // Muro de reflexiones: mismo formulario y hoja de siempre; aquí se muestran solo las enviadas desde el 14 de noviembre.
+  // Muro de reflexiones: mismo formulario y hoja de siempre; aquí se muestran solo las enviadas entre el 14 y el 20 de noviembre.
   var MURO_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSeDit1-IauxY_ZUzXTd0IutGoEeQ9AgMBAJA1IZ_S8fdddw9A/viewform';
   var MURO_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRYl1AWfExalxfec5N8X3LCG1WyaMDLuciedAsiH8rYawfebvo1K2nujP2wkDQ2GZP0DBr-JEXDkHF5/pub?output=csv';
-  var MURO_DESDE = new Date(2026, 10, 14);
+  var MURO_DESDE = new Date(2026, 10, 14), MURO_HASTA = new Date(2026, 10, 21);
   (function () {
     var btn = document.getElementById('muro-btn'), lista = document.getElementById('muro-lista'), vacio = document.getElementById('muro-vacio');
     if (MURO_FORM) { btn.href = MURO_FORM; btn.removeAttribute('aria-disabled'); vacio.textContent = 'Sé la primera persona en compartir lo que quedó resonando 🌱'; }
@@ -476,7 +476,7 @@ footer p+p{margin-top:6px}
     function fecha(s) { var m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})/.exec((s || '').trim()); return m ? new Date(+m[3], +m[2] - 1, +m[1]) : null; }
     function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]; }); }
     fetch(MURO_CSV + (MURO_CSV.indexOf('?') > -1 ? '&' : '?') + 't=' + Date.now()).then(function (r) { return r.text(); }).then(function (t) {
-      var filas = csv(t).slice(1).filter(function (f) { var d = fecha(f[0]); return f[1] && f[1].trim() && (!d || d >= MURO_DESDE); }).reverse();
+      var filas = csv(t).slice(1).filter(function (f) { var d = fecha(f[0]); return f[1] && f[1].trim() && (!d || (d >= MURO_DESDE && d < MURO_HASTA)); }).reverse();
       if (!filas.length) return;
       vacio.style.display = 'none';
       lista.innerHTML = filas.map(function (f) {

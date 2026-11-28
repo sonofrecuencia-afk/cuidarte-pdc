@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sesión 5 · Del amarre al vuelo · Cuidarte</title>
+<meta name="description" content="El cuento del elefante encadenado, las creencias que aprendimos, de la estaca a mis alas y la improvisación del amarre al vuelo.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuidarte · Sonofrecuencia">
+<meta property="og:title" content="Sesión 5 · Del amarre al vuelo · Cuidarte">
+<meta property="og:description" content="El cuento del elefante encadenado, las creencias que aprendimos, de la estaca a mis alas y la improvisación del amarre al vuelo.">
+<meta property="og:url" content="https://cuidarte-pdc.sonofrecuencia.cl/sesion-5.html">
+<meta property="og:image" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<meta property="og:image:secure_url" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cuidarte, taller de bienestar del Punto de Cultura Plaza Bogotá">
+<meta property="og:locale" content="es_CL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cuidarte-pdc.sonofrecuencia.cl/img/og.jpg">
+<link rel="icon" href="img/logo_sono_circulo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#13301e; --green:#2b5a35; --sage:#dfe6d6; --cream:#f8f4ec;
+  --gold:#a8844b; --gold-soft:#d9c39a; --ink:#1c241e; --muted:#5b655d; --line:#ddd2bd;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--forest)}
+h2{font-size:clamp(32px,5vw,46px)}
+h3{font-size:clamp(24px,3.4vw,30px)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.kicker{font-size:12px;letter-spacing:4px;font-weight:600;color:var(--gold);text-transform:uppercase;margin-bottom:12px;display:block}
+.lead{font-family:var(--serif);font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:var(--ink)}
+section{padding:72px 0}
+
+/* barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(19,48,30,.96);backdrop-filter:blur(6px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.top img{height:30px}
+.top nav{display:flex;gap:20px;font-size:13px;font-weight:500}
+.top nav a{color:var(--cream);text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--gold-soft)}
+@media(max-width:700px){.top nav{display:none}}
+
+/* portada */
+.hero{position:relative;min-height:min(78vh,760px);display:flex;align-items:flex-end;color:var(--cream);overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,48,30,.25) 0%,rgba(19,48,30,.62) 38%,rgba(19,48,30,.96) 100%)}
+@media(max-width:600px){.hero:after{background:linear-gradient(180deg,rgba(19,48,30,.45) 0%,rgba(19,48,30,.8) 35%,rgba(19,48,30,.97) 100%)}}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px}
+.hero h1{color:var(--cream);font-size:clamp(46px,8vw,86px)}
+.hero h1 em{color:var(--gold-soft)}
+.hero p.sub{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);max-width:640px;margin-top:14px;line-height:1.35}
+.datos{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14px;font-weight:500}
+.datos span{display:flex;align-items:center;gap:8px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:40px;font-weight:600;font-size:14px;text-decoration:none;letter-spacing:.3px}
+.btn.gold{background:var(--gold);color:#fff}
+.btn.line{border:1.5px solid var(--gold-soft);color:var(--cream)}
+.btn.verde{background:var(--forest);color:var(--cream)}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.intro img{border-radius:180px 180px 18px 18px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 20px 50px rgba(19,48,30,.25)}
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.pilares div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;font-size:13px;font-weight:600;color:var(--green)}
+.pilares b{display:block;font-size:26px;margin-bottom:4px}
+@media(max-width:800px){.intro{grid-template-columns:1fr}.intro img{max-width:380px;margin:0 auto}.pilares{grid-template-columns:repeat(2,1fr)}}
+
+/* sesiones */
+.sesiones{background:var(--sage)}
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+@media(max-width:860px){.grid6{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid6{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:18px;padding:24px;border:1px solid var(--line);position:relative;display:flex;flex-direction:column;min-height:210px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(19,48,30,.15)}
+.card .n{font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1}
+.card .f{font-size:12px;letter-spacing:2px;font-weight:600;color:var(--muted);text-transform:uppercase;margin:8px 0 6px}
+.card h3{font-size:25px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+.card .ir{margin-top:auto;padding-top:14px;font-weight:600;font-size:14px;color:var(--green)}
+.card.abierta{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.card.abierta h3{color:var(--cream)} .card.abierta p,.card.abierta .f{color:var(--sage)} .card.abierta .ir{color:var(--gold-soft)}
+.card.cerrada{opacity:.75;background:rgba(255,255,255,.55)}
+.card.cerrada .candado{position:absolute;top:22px;right:22px;font-size:20px}
+
+/* herramientas y bosque */
+.lista-h{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+@media(max-width:700px){.lista-h{grid-template-columns:1fr}}
+.h{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.h .ic{font-size:28px;line-height:1}
+.h b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.h span{font-size:14px;color:var(--muted)}
+.h.pronto{opacity:.6}
+.bosque{background:var(--forest);color:var(--cream)}
+.bosque h2{color:var(--cream)}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+.galeria img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+@media(max-width:700px){.galeria{grid-template-columns:repeat(2,1fr)}}
+
+/* páginas internas */
+.cabecera{background:var(--forest);color:var(--cream);padding:64px 0 54px}
+.cabecera h1{color:var(--cream);font-size:clamp(40px,6.5vw,68px)}
+.cabecera h1 em{color:var(--gold-soft)}
+.cabecera p{font-family:var(--serif);font-size:22px;color:var(--sage);margin-top:10px;max-width:700px}
+.volver{display:inline-block;margin-bottom:20px;color:var(--gold-soft);font-size:14px;text-decoration:none;font-weight:600}
+.bloque{padding:52px 0;border-bottom:1px solid var(--line)}
+.bloque:last-of-type{border-bottom:0}
+.bloque .wrap{max-width:780px}
+.bloque p+p{margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:7px 15px;font-size:14px;font-weight:500}
+.audio{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:20px;box-shadow:0 10px 30px rgba(19,48,30,.08)}
+.audio b{font-family:var(--serif);font-size:24px;color:var(--forest);display:block}
+.audio small{color:var(--muted)}
+.audio audio{width:100%;margin-top:14px}
+ol.pasos{margin:16px 0 0 20px}
+ol.pasos li{margin-bottom:6px}
+.nota{background:var(--sage);border-left:4px solid var(--gold);border-radius:0 14px 14px 0;padding:16px 20px;margin-top:20px;font-size:15px}
+.credito{font-size:13px;color:var(--muted);margin-top:22px;font-style:italic}
+blockquote{font-family:var(--serif);font-size:24px;line-height:1.35;color:var(--green);font-style:italic;border-left:3px solid var(--gold-soft);padding-left:18px;margin:22px 0}
+blockquote cite{display:block;font-family:var(--sans);font-size:13px;font-style:normal;color:var(--muted);margin-top:6px}
+.calc{background:var(--forest);color:var(--cream);border-radius:22px;padding:28px;margin-top:20px}
+.calc label{font-weight:600;font-size:15px}
+.calc input{width:110px;font:600 22px var(--sans);padding:8px 12px;border-radius:12px;border:0;margin:0 10px;text-align:center}
+.calc .res{margin-top:18px;font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--sage)}
+.calc .res b{color:var(--gold-soft);font-size:32px}
+.preguntas li{margin:10px 0 0 20px}
+
+/* pie */
+footer{background:var(--ink);color:var(--sage);padding:46px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+footer .logos{display:flex;gap:22px;align-items:center}
+footer .logos img{height:34px}
+footer .logos img.pdc{height:64px;background:#fff;border-radius:50%;padding:3px}
+footer a{color:var(--gold-soft)}
+footer p+p{margin-top:6px}
+
+/* metodologías */
+.metodos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+@media(max-width:860px){.metodos{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.metodos{grid-template-columns:1fr}}
+.metodo{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.metodo .ic{font-size:30px;line-height:1}
+.metodo h3{font-size:24px;margin:10px 0 6px}
+.metodo p{font-size:14px;color:var(--muted)}
+
+/* redes y logos */
+.redes{display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:26px}
+.redes a{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream);background:rgba(255,255,255,.1);border:1px solid rgba(217,195,154,.45);border-radius:60px;padding:6px 18px 6px 6px}
+.redes a:hover{background:rgba(255,255,255,.18)}
+.redes img{width:48px;height:48px;border-radius:50%;background:#fff;object-fit:contain;padding:2px}
+.redes span{display:flex;align-items:center;gap:6px;font-weight:600;font-size:14px;flex-wrap:wrap}
+.redes small{display:block;width:100%;font-weight:500;font-size:11px;letter-spacing:1px;color:var(--gold-soft);text-transform:uppercase}
+/* galería de sesión */
+.fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.fotos button{border:0;padding:0;cursor:zoom-in;border-radius:14px;overflow:hidden;background:none}
+.fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .3s}
+.fotos button:hover img{transform:scale(1.04)}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.videos video{width:100%;border-radius:14px;background:#000;aspect-ratio:9/16;object-fit:cover}
+@media(max-width:560px){.fotos{grid-template-columns:repeat(2,1fr)}}
+.visor{position:fixed;inset:0;background:rgba(10,20,14,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.visor.on{display:flex}
+.visor img{max-width:100%;max-height:90vh;border-radius:10px}
+.visor button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:38px;cursor:pointer;line-height:1}
+
+/* destacado y muro */
+.destacado{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.destacado img{border-radius:16px;width:100%;cursor:zoom-in}
+@media(max-width:700px){.destacado{grid-template-columns:1fr}}
+.frase{font-family:var(--serif);font-size:clamp(28px,4.4vw,40px);line-height:1.15;color:var(--forest);text-align:center;padding:30px 10px;font-style:italic}
+.frase b{color:var(--gold);font-weight:600}
+.muro{background:var(--sage);border-radius:22px;padding:26px;margin-top:22px}
+.muro-lista{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+@media(max-width:600px){.muro-lista{grid-template-columns:1fr}}
+.reflexion{background:#fff;border-radius:16px;padding:18px 20px;border:1px solid var(--line)}
+.reflexion p{font-family:var(--serif);font-size:20px;line-height:1.4;color:var(--ink);white-space:pre-line}
+.reflexion span{display:block;margin-top:8px;font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.muro-vacio{font-size:15px;color:var(--muted);margin-top:14px}
+.btn[aria-disabled="true"]{opacity:.55;pointer-events:none}
+
+/* sesión 3 */
+.relato{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-top:20px;font-family:var(--serif);font-size:20px;line-height:1.55;box-shadow:0 10px 30px rgba(19,48,30,.06)}
+.relato p+p{margin-top:12px}
+.emociones{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+@media(max-width:700px){.emociones{grid-template-columns:1fr}}
+.emo{background:#fff;border:1px solid var(--line);border-left:6px solid var(--c);border-radius:16px;padding:0;overflow:hidden}
+.emo summary{cursor:pointer;list-style:none;position:relative;padding:16px 46px 16px 18px;font-family:var(--serif);font-size:24px;font-weight:600;color:var(--forest);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.emo summary::-webkit-details-marker{display:none}
+.emo summary:after{content:"+";position:absolute;right:18px;top:15px;font-family:var(--sans);font-size:22px;color:var(--gold)}
+.emo[open] summary:after{content:"–"}
+.emo summary small{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.emo .dot{width:14px;height:14px;border-radius:50%;background:var(--c);flex:none}
+.emo dl{padding:0 18px 16px}
+.emo dt{font-weight:600;font-size:14px;color:var(--green);margin-top:10px}
+.emo dd{font-size:15px;color:var(--ink)}
+.ideas{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+@media(max-width:700px){.ideas{grid-template-columns:1fr}}
+.idea{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.idea b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest);line-height:1.2}
+.idea p{font-size:15px;color:var(--muted);margin-top:6px}
+.ejercicios{display:grid;gap:12px;margin-top:24px}
+.ej{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.ej .num{flex:none;width:40px;height:40px;border-radius:50%;background:var(--forest);color:var(--gold-soft);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:24px;font-weight:600}
+.ej b{display:block;font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest);line-height:1.2}
+.ej p{font-size:15px;color:var(--ink);margin-top:4px}
+.ej p b{display:inline;font-family:inherit;font-size:inherit;font-weight:700;color:inherit;line-height:inherit}
+.grupal{width:100%;border-radius:18px;margin-top:22px;cursor:zoom-in}
+.tabla-emo{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.tabla-emo>summary{cursor:pointer;padding:14px 18px;font-weight:600;color:var(--green);font-size:15px}
+.tabla-scroll{overflow-x:auto}
+.tabla-emo table{border-collapse:collapse;min-width:720px;width:100%;font-size:13.5px;line-height:1.5}
+.tabla-emo th,.tabla-emo td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top;text-align:left}
+.tabla-emo thead th{background:var(--forest);color:var(--cream);font-size:13px;border-top:0}
+.tabla-emo tbody th{font-family:var(--serif);font-size:19px;color:var(--forest);white-space:nowrap}
+.tabla-emo tbody th small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:600}
+.resumen{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin-top:22px;background:var(--forest);color:var(--cream);border-radius:22px;padding:22px}
+.resumen video{width:100%;aspect-ratio:9/16;border-radius:16px;background:#000;object-fit:cover}
+.resumen h3{color:var(--cream)} .resumen p{color:var(--sage)!important}
+@media(max-width:700px){.resumen{grid-template-columns:1fr}.resumen video{max-width:320px;margin:0 auto}}
+
+/* sesión 4 */
+.compara{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+@media(max-width:700px){.compara{grid-template-columns:1fr}}
+.compara>div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.compara .no{border-top:5px solid #c9a7a0}
+.compara .si{border-top:5px solid var(--green)}
+.compara b{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.compara ul{margin:8px 0 0 20px;font-size:15px}
+.compara li{margin-top:6px}
+.funciones{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+@media(max-width:800px){.funciones{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.funciones{grid-template-columns:1fr}}
+.fn{background:#fff;border:1px solid var(--line);border-left:6px solid var(--c);border-radius:16px;padding:16px 18px}
+.fn b{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--forest)}
+.fn p{font-size:15px;color:var(--ink);margin-top:4px}
+.fotos.cuatro{grid-template-columns:repeat(4,1fr)}
+@media(max-width:700px){.fotos.cuatro{grid-template-columns:repeat(2,1fr)}}
+.texto-cita{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-top:20px;font-family:var(--serif);font-size:20px;line-height:1.55;box-shadow:0 10px 30px rgba(19,48,30,.06)}
+.texto-cita p+p{margin-top:12px}
+.aplauso{display:flex;gap:18px;align-items:flex-start;margin-top:24px;background:linear-gradient(135deg,#fff8e6,#fff);border:2px solid var(--gold-soft);border-radius:22px;padding:24px 26px;box-shadow:0 10px 30px rgba(19,48,30,.08)}
+.aplauso .ic{font-size:40px;line-height:1;flex:none}
+.aplauso>div>b{display:block;font-family:var(--serif);font-size:28px;font-weight:600;color:var(--forest);line-height:1.2}
+.aplauso p{margin-top:8px;font-size:16px}
+.texto-cita cite{display:block;font-family:var(--sans);font-size:14px;font-style:normal;font-weight:600;color:var(--gold);margin-top:14px;text-align:right}
+
+/* sesión 5 */
+.yt{position:relative;margin-top:22px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 10px 30px rgba(19,48,30,.12)}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a href="index.html"><img src="img/logo_blanco.png" alt="Sonofrecuencia"></a>
+  <nav><a href="#vivimos">Lo que vivimos</a><a href="#cuento">El cuento</a><a href="#creencias">Las creencias</a><a href="#galeria">Galería</a><a href="#impermanencia">Impermanencia</a><a href="#ejercicios">Ejercicios</a></nav>
+</div></header>
+
+<div class="cabecera"><div class="wrap">
+  <a class="volver" href="index.html#sesiones">← Todas las sesiones</a>
+  <span class="kicker" style="color:var(--gold-soft)">Sesión 5 · Sábado 21 de noviembre</span>
+  <h1>Del amarre <em>al vuelo</em></h1>
+  <p>El cuento del elefante, las creencias que aprendimos, nuestras estacas y nuestras alas, y una gran fanfarria de instrumentos para decirnos: ¡tú puedes!</p>
+  <div class="redes">
+      <a href="https://instagram.com/puntodecultura_plazabogota" target="_blank" rel="noopener"><img src="img/logo_pdc.png" alt="Logo Punto de Cultura Plaza Bogotá"><span><small>Punto de Cultura Plaza Bogotá</small><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@puntodecultura_plazabogota</span></a>
+      <a href="https://instagram.com/sonofrecuencia_musicoterapia" target="_blank" rel="noopener"><img src="img/logo_sono_circulo.png" alt="Logo Sonofrecuencia"><span><small>Sonofrecuencia · Musicoterapia</small><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>@sonofrecuencia_musicoterapia</span></a>
+    </div>
+</div></div>
+
+<div class="bloque" id="vivimos"><div class="wrap">
+  <span class="kicker">📝 Lo que vivimos</span>
+  <h2>De la estaca a nuestras alas</h2>
+  <p style="margin-top:16px">Volvimos a nuestra sede de <b>Madrid 1648</b>, con horario nuevo y mantas para el suelo. 💚 Partimos, como siempre, <b>jugando</b>: con <b>casa-inquilino</b> y <b>cara o sello</b> nos movimos, nos reímos y fuimos cambiando de lugar y de pareja, conociéndonos un poco más como comunidad.</p>
+  <p>Luego llegaron los <b>cuencos</b>. Esta vez no solo los escuchamos: <b>aprendimos a tocarlos</b>, en dos grupos, para conectar con el <b>presente</b> y con el <b>observador</b>, esa parte de nosotros que se da cuenta de lo que pasa sin dejarse arrastrar.</p>
+  <p>Con el cuerpo tranquilo escuchamos el cuento de <b>"El elefante encadenado"</b> y conversamos sobre las <b>creencias</b>: esas ideas que aprendimos de pequeños, muchas veces de quienes más nos quisieron, y que todavía nos atan aunque ya crecimos. Después, de pie y con toda la voz, <b>¡arrancamos la estaca!</b></p>
+  <div class="frase">"¿Cuándo fue la última vez que tiraste de <b>tu estaca</b>?"</div>
+  <p>En la <b>arteterapia "De la estaca a mis alas"</b> cada persona dibujó, en una mitad de la hoja, aquello que la ata y las creencias que todavía la frenan, y en la otra mitad, sus <b>alas</b>: en cada pluma, un permiso o una creencia nueva.</p>
+  <p>Y cerramos con música: en la improvisación <b>"Del amarre al vuelo"</b> primero tocamos todos amarrados al mismo pulso rígido, después cada uno fue rompiendo el patrón mientras el grupo lo sostenía, y al final volamos todos juntos. El cierre fue el ritual <b>"¡Tú puedes!"</b>: cada persona leyó un permiso de sus alas y el grupo le respondió con una <b>fanfarria de instrumentos</b>. 🎉🥁</p>
+  <div class="aplauso">
+    <span class="ic">🦅</span>
+    <div><b>¡Qué manera de volar!</b>
+    <p>Gracias por la <b>valentía</b> de mirar sus estacas y de leer en voz alta sus permisos. Darnos cuenta de lo que creemos es el primer paso para elegir algo nuevo, y hacerlo <b>acompañados</b>, con el grupo celebrando cada ala, lo hace todavía más fuerte. ¡Bravo, grupo! 💚</p></div>
+  </div>
+  <div class="chips"><span>🎲 Casa-inquilino y cara o sello</span><span>🔔 Aprendimos a tocar los cuencos</span><span>🐘 El elefante encadenado</span><span>🪢 Arrancar la estaca</span><span>🪶 De la estaca a mis alas</span><span>🥁 Del amarre al vuelo</span><span>🎉 ¡Tú puedes!</span></div>
+  <div class="destacado">
+    <img src="img/sesion5/s5-alas.jpg" alt="Las hojas de la arteterapia en el suelo, con estacas y alas dibujadas" data-src="img/sesion5/s5-alas.jpg" class="ampliar">
+    <div><span class="kicker">🪶 Nuestras alas</span><h3>Me doy permiso para…</h3><p style="margin-top:10px;color:var(--muted)">Cada hoja tiene dos mitades: la estaca, que es privada, y las alas, llenas de permisos. "Me doy permiso para expresarme", "puedo aprender a cualquier edad", "merezco descansar"… Guárdalas donde puedas verlas, junto a tu joya de la sesión 3.</p></div>
+  </div>
+</div></div>
+
+<div class="bloque" id="cuento"><div class="wrap">
+  <span class="kicker">📖 El cuento de la sesión</span>
+  <h2>El elefante encadenado</h2>
+  <p style="margin-top:12px;color:var(--muted)">Versión libre, contada con nuestras palabras.</p>
+  <div class="relato">
+    <p>Había una vez un niño al que le encantaba el circo. De todo el espectáculo, lo que más esperaba era el número del elefante: un animal enorme, pesado y fortísimo, que levantaba troncos, se paraba en dos patas y hacía temblar el suelo con cada paso.</p>
+    <p>Pero un día, al terminar la función, el niño vio algo que no pudo olvidar. Detrás de la carpa, el elefante estaba quieto, con una de sus patas atada con una cadena a una pequeña estaca de madera, apenas clavada unos centímetros en la tierra.</p>
+    <p>El niño no lo podía entender. Ese animal, capaz de arrancar un árbol de raíz, podía sacar esa estaca con un solo tirón y escaparse. ¿Por qué no lo hacía?</p>
+    <p>Preguntó a sus papás, a sus profesores, a sus tíos. Uno le dijo: "Porque está amaestrado". Y el niño insistió: "Pero si está amaestrado, ¿para qué lo atan?". Nadie le supo dar una respuesta que lo dejara tranquilo, y con el tiempo se olvidó de la pregunta.</p>
+    <p>Muchos años después, ya grande, se encontró con alguien sabio que le contó lo que de verdad había pasado.</p>
+    <p>"El elefante no se escapa porque lo ataron a una estaca muy parecida cuando era muy, muy pequeño. Ese día el elefantito tiró y tiró con todas sus fuerzas. Empujó, sudó, se cansó… y la estaca no se movió, porque para él, tan pequeño, era demasiado fuerte. Al día siguiente volvió a intentarlo, y al otro, y al otro."</p>
+    <p>"Hasta que un día, agotado, aceptó que no podía. Y ese fue el día más triste de su historia: desde entonces, cree que no puede."</p>
+    <p>"El elefante enorme que viste en el circo no se escapa porque recuerda la impotencia que sintió cuando era pequeño. Y lo peor es que nunca más volvió a ponerlo a prueba. Nunca más tiró de la estaca para ver si, ahora que creció, ya puede."</p>
+    <p><b>Y tú… ¿cuándo fue la última vez que tiraste de tu estaca?</b></p>
+  </div>
+  <p class="credito">Versión libre basada en "El elefante encadenado", de Jorge Bucay (<i>Déjame que te cuente</i>).</p>
+  <p style="margin-top:20px"><b>Para pensar en la semana:</b></p>
+  <ul class="preguntas">
+    <li>¿Qué frases escuchabas de niño o niña sobre lo que podías o no podías hacer, ser o <b>sentir</b>?</li>
+    <li>¿Quién te las decía, y para qué crees que lo hacía?</li>
+    <li>¿Cuál de esas creencias sigues obedeciendo hoy, aunque ya creciste?</li>
+    <li>¿Cuándo fue la última vez que tiraste de tu estaca?</li>
+  </ul>
+</div></div>
+
+<div class="bloque" id="creencias"><div class="wrap">
+  <span class="kicker">🪢 Lo que conversamos</span>
+  <h2>Las creencias: las estacas que aprendimos</h2>
+  <p style="margin-top:16px">Las <b>creencias</b> son ideas que aprendimos tan temprano, y repetimos tantas veces, que se volvieron verdades. Ya no las pensamos: simplemente actuamos desde ellas. Son como unos <b>lentes</b> a través de los cuales miramos el mundo, y que solemos confundir con el mundo mismo.</p>
+  <p>¿Recuerdan el sábado anterior? Cuando alguien se emocionó, a varios nos salió de inmediato: <i>"pobrecita, no llores"</i>. Esa es una <b>creencia aprendida</b>: "llorar está mal", "hay que aguantarse", "los hombres no lloran". Nadie la eligió: nos la pasaron. Y sigue funcionando sola, aunque ya sabemos que expresar lo que sentimos es justamente lo que nos hace bien.</p>
+  <blockquote>El problema no es la estaca: es que crecimos y no volvimos a probar.</blockquote>
+  <p><b>¿De dónde vienen?</b> Muchas veces, de las personas que más nos quisieron: <i>"no te subas, que te vas a caer"</i>, <i>"no hagas ruido"</i>, <i>"tú no eres bueno para esto"</i>. La mayoría lo dijo <b>para cuidarnos</b>, con lo que sabían y con sus propios miedos. Por eso no se trata de culpar a nadie, sino de <b>agradecer el cuidado</b> y revisar qué creencias nos siguen sirviendo y cuáles nos están atando.</p>
+  <div class="compara">
+    <div class="no"><b>Algunas estacas…</b><ul><li>"No soy capaz."</li><li>"No llores, no hagas ruido."</li><li>"Primero los demás."</li><li>"Ya estoy grande para eso."</li><li>"Eso es para los artistas."</li></ul></div>
+    <div class="si"><b>…y algunas alas</b><ul><li>"Me doy permiso para expresarme."</li><li>"Puedo llorar cuando lo necesito."</li><li>"Merezco descansar."</li><li>"Puedo aprender a cualquier edad."</li><li>"Mi voz importa."</li></ul></div>
+  </div>
+  <p style="margin-top:20px">Y una idea importante: la estaca, en su momento, <b>nos dio seguridad</b>. Cada persona tiene las creencias que necesitó para sentirse protegida y querida. Por eso cuesta soltarlas, y por eso conviene hacerlo con cariño, sin apuro. Cuando aparece el <b>Testigo</b> (sesión 2) y nos damos cuenta de una creencia, ya no somos esa creencia: podemos mirarla, y podemos elegir.</p>
+  <div class="nota">🤔 Cada vez que algo te parezca imposible, pregúntate: <b>¿esto es verdad hoy, o es una estaca de cuando era pequeño o pequeña?</b></div>
+
+  <h3 style="margin-top:34px">Del amarre al vuelo, con sonido</h3>
+  <p style="margin-top:10px">Esta vez el tema no solo lo conversamos y lo dibujamos: también lo <b>tocamos</b>.</p>
+  <div class="ejercicios">
+    <div class="ej"><span class="num">1</span><div><b>La estaca</b><p>Todos tocamos el mismo pulso, rígido y parejo, repitiendo <i>"No – se – pue – de"</i>. Nadie podía salirse. Se sintió monótono y apretado… pero también cómodo y seguro. Así funcionan las creencias.</p></div></div>
+    <div class="ej"><span class="num">2</span><div><b>Arrancar</b><p>De uno en uno, cada persona rompió el patrón y tocó a su manera, mientras el grupo la sostenía con el pulso. El mismo ritmo que antes amarraba, ahora <b>sostenía</b>.</p></div></div>
+    <div class="ej"><span class="num">3</span><div><b>El vuelo</b><p>Al final volamos todos libres, escuchándonos, hasta gritar juntos <i>"¡Sí, yo puedo!"</i>. Y en el ritual "¡Tú puedes!", cada permiso fue celebrado con una fanfarria de instrumentos. 🎉</p></div></div>
+  </div>
+  <div class="btns" style="margin-top:22px"><a class="btn verde" href="lectura-5.html">Leer más: "Las creencias, los lentes con que miramos" →</a></div>
+</div></div>
+
+<div class="bloque" id="galeria"><div class="wrap">
+  <span class="kicker">📸 Galería</span>
+  <h2>Así lo vivimos</h2>
+  <p style="margin-top:12px">Algunos momentos del quinto encuentro. Toca una foto para verla en grande.</p>
+  <div class="nota">🙏 Si apareces en alguna foto o video y prefieres que no esté publicada, avísanos por el grupo de WhatsApp o por interno y la sacamos de inmediato, sin problema.</div>
+  <div class="fotos cuatro">
+    <button type="button" data-src="img/sesion5/s5-04.jpg"><img src="img/sesion5/s5-04.jpg" alt="Juegos para conocernos como comunidad" loading="lazy"></button>
+    <button type="button" data-src="img/sesion5/s5-02.jpg"><img src="img/sesion5/s5-02.jpg" alt="Aprendiendo a tocar los cuencos en círculo" loading="lazy"></button>
+    <button type="button" data-src="img/sesion5/s5-01.jpg"><img src="img/sesion5/s5-01.jpg" alt="Dibujando la estaca y las alas" loading="lazy"></button>
+    <button type="button" data-src="img/sesion5/s5-03.jpg"><img src="img/sesion5/s5-03.jpg" alt="Las alas del grupo en el suelo" loading="lazy"></button>
+  </div>
+  <p style="margin-top:22px"><b>🎲 Conocernos como comunidad · 🔔 Aprendiendo a tocar los cuencos · 🪶 Dibujando nuestras alas</b></p>
+  <div class="videos">
+    <video controls preload="none" playsinline poster="img/sesion5/s5-video-1.jpg" src="video/s5-video-1.mp4"></video>
+    <video controls preload="none" playsinline poster="img/sesion5/s5-video-2.jpg" src="video/s5-video-2.mp4"></video>
+    <video controls preload="none" playsinline poster="img/sesion5/s5-video-3.jpg" src="video/s5-video-3.mp4"></video>
+    <video controls preload="none" playsinline poster="img/sesion5/s5-video-4.jpg" src="video/s5-video-4.mp4"></video>
+  </div>
+  <img class="grupal ampliar" src="img/sesion5/s5-grupo.jpg" data-src="img/sesion5/s5-grupo.jpg" alt="Foto grupal del quinto encuentro, con las alas en el suelo" loading="lazy">
+</div></div>
+
+<div class="visor" id="visor" role="dialog" aria-label="Foto ampliada"><button type="button" aria-label="Cerrar">×</button><img alt=""></div>
+
+<div class="bloque" id="impermanencia"><div class="wrap">
+  <span class="kicker">🍂 Para ver en la semana</span>
+  <h2>La impermanencia y los ciclos de la vida</h2>
+  <p style="margin-top:16px">Todo cambia: las estaciones, el cuerpo, las circunstancias, las personas que nos rodean… y también nuestras creencias. Lo que ayer fue verdad, hoy puede no serlo. Este video nos invita a mirar los <b>ciclos de la vida</b> (los momentos de crecer y los de soltar) sin aferrarnos ni resistirnos, porque cada final deja espacio para que algo nuevo pueda nacer.</p>
+  <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/qbnGGZwrkLU" title="La impermanencia y los ciclos de la vida" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <p style="margin-top:10px;font-size:14px"><a href="https://www.youtube.com/watch?v=qbnGGZwrkLU" target="_blank" rel="noopener">¿No se ve el video? Ábrelo directamente en YouTube →</a></p>
+  <p style="margin-top:20px"><b>Cómo verlo:</b></p>
+  <ol class="pasos">
+    <li>Busca tu <b>lugar seguro</b> y unos 16 minutos sin interrupciones.</li>
+    <li>Escúchalo con los ojos cerrados si quieres, como una meditación.</li>
+    <li>Al terminar, pregúntate: <i>¿a qué me estoy aferrando?, ¿qué ciclo de mi vida está terminando?, ¿qué podría nacer si lo suelto?</i></li>
+  </ol>
+  <p class="credito">Texto de Eckhart Tolle, "La impermanencia y los ciclos de la vida" (<i>El poder del ahora</i>), en video publicado en YouTube por el canal Yianeli Millán.</p>
+</div></div>
+
+<div class="bloque" id="ejercicios"><div class="wrap">
+  <span class="kicker">✏️ Para la semana</span>
+  <h2>Ejercicios para soltar estacas y abrir alas</h2>
+  <div class="ejercicios">
+    <div class="ej"><span class="num">1</span><div><b>Del "debería" al "elijo"</b><p>Escribe 3 "debería" que te repites (<i>debería ser más…, debería hacer…, no debería…</i>). Cambia cada uno por <i>"elijo…"</i> o <i>"me doy permiso para…"</i> y fíjate qué cambia en el cuerpo al decirlo.</p></div></div>
+    <div class="ej"><span class="num">2</span><div><b>¿Es verdad hoy?</b><p>Cuando algo te parezca imposible, detente y pregúntate: <i>¿esto es verdad hoy, o es una estaca de cuando era pequeño o pequeña?</i></p></div></div>
+    <div class="ej"><span class="num">3</span><div><b>Mis alas a la vista</b><p>Pon tus alas donde puedas verlas cada día. Elige un permiso y léelo en voz alta en la mañana, como lo hicimos en el ritual.</p></div></div>
+    <div class="ej"><span class="num">4</span><div><b>Tirar de una estaca pequeña</b><p>Elige algo pequeño que siempre creíste que "no era para ti" (cantar, bailar, pedir ayuda, decir que no…) y pruébalo esta semana. Solo un tirón, para ver si ahora que creciste, ya puedes.</p></div></div>
+    <div class="ej"><span class="num">5</span><div><b>Las frases que me regalaron</b><p>Piensa en una persona importante de tu infancia y anota las frases que te repetía. Agradece el cuidado que había detrás y pregúntate: <i>¿cuál de estas frases me sigue sirviendo y cuál ya no?</i></p></div></div>
+    <div class="ej"><span class="num">6</span><div><b>Las preguntas de la noche</b><p>Antes de dormir: <i>¿En qué he progresado hoy? ¿Qué cualidades positivas he expresado hoy?</i></p></div></div>
+  </div>
+  <div class="nota">📅 <b>Nuestro último encuentro: sábado 28 de noviembre, 16:30 a 18:30 hrs</b>, en la sede de <b>Madrid 1648</b>. Trae tu mantita. 💚<br>🎭 Y anota en tu calendario: <b>sábado 19 de diciembre, Jornada Cultural</b> del Punto de Cultura Plaza Bogotá, abierta a toda la comunidad.</div>
+</div></div>
+
+<div class="bloque" id="resonando"><div class="wrap">
+  <span class="kicker">💬 Muro de reflexiones</span>
+  <h2>¿Qué quedó resonando en ti?</h2>
+  <p style="margin-top:16px">Del quinto encuentro (los cuencos, el elefante, tu estaca, tus alas, el vuelo con los instrumentos…), <b>¿qué se quedó contigo?</b> Compártelo aquí: una palabra, una frase, o el permiso que te diste.</p>
+  <div class="muro">
+    <a class="btn verde" id="muro-btn" href="#" target="_blank" rel="noopener" aria-disabled="true">✍️ Compartir mi reflexión</a>
+    <div class="muro-lista" id="muro-lista"></div>
+    <p class="muro-vacio" id="muro-vacio">Muy pronto podrás dejar aquí tu reflexión. Mientras tanto, compártela en el grupo de WhatsApp 💚</p>
+  </div>
+  <p class="credito">Las reflexiones se publican de forma anónima. Antes de aparecer aquí pueden tardar unos minutos. Las de la semana anterior están en la <a href="sesion-4.html#resonando">sesión 4</a>.</p>
+</div></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><b style="color:var(--cream)">Cuidarte</b> · Taller de Bienestar · Punto de Cultura Plaza Bogotá</p>
+      <p><a href="index.html">Volver al inicio</a> · <a href="sesion-1.html">Sesión 1</a> · <a href="sesion-2.html">Sesión 2</a> · <a href="sesion-3.html">Sesión 3</a> · <a href="sesion-4.html">Sesión 4</a> · <a href="sesion-5.html">Sesión 5</a></p>
+      <p style="margin-top:14px;font-size:12px;opacity:.8">Parte del material de estudio se basa en la Escuela Española de Desarrollo Transpersonal, con su autorización.</p>
+    </div>
+    <div class="logos"><img src="img/logo_blanco.png" alt="Sonofrecuencia"><img class="pdc" src="img/logo_pdc.png" alt="Punto de Cultura Plaza Bogotá"></div>
+  </div>
+</footer>
+<script>
+  var visor = document.getElementById('visor'), vimg = visor.querySelector('img');
+  document.querySelectorAll('.fotos button, img.ampliar').forEach(function (b) {
+    b.addEventListener('click', function () { vimg.src = b.getAttribute('data-src'); vimg.alt = (b.querySelector('img') || b).alt; visor.classList.add('on'); });
+  });
+  visor.addEventListener('click', function () { visor.classList.remove('on'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') visor.classList.remove('on'); });
+</script>
+<script>
+  // Muro de reflexiones: mismo formulario y hoja de siempre; aquí se muestran solo las enviadas desde el 21 de noviembre.
+  var MURO_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSeDit1-IauxY_ZUzXTd0IutGoEeQ9AgMBAJA1IZ_S8fdddw9A/viewform';
+  var MURO_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRYl1AWfExalxfec5N8X3LCG1WyaMDLuciedAsiH8rYawfebvo1K2nujP2wkDQ2GZP0DBr-JEXDkHF5/pub?output=csv';
+  var MURO_DESDE = new Date(2026, 10, 21);
+  (function () {
+    var btn = document.getElementById('muro-btn'), lista = document.getElementById('muro-lista'), vacio = document.getElementById('muro-vacio');
+    if (MURO_FORM) { btn.href = MURO_FORM; btn.removeAttribute('aria-disabled'); vacio.textContent = 'Sé la primera persona en compartir lo que quedó resonando 🌱'; }
+    if (!MURO_CSV) return;
+    function csv(t) {
+      var filas = [], f = [], c = '', q = false;
+      for (var i = 0; i < t.length; i++) {
+        var ch = t[i];
+        if (q) { if (ch === '"') { if (t[i + 1] === '"') { c += '"'; i++; } else q = false; } else c += ch; }
+        else if (ch === '"') q = true;
+        else if (ch === ',') { f.push(c); c = ''; }
+        else if (ch === '\n') { f.push(c); filas.push(f); f = []; c = ''; }
+        else if (ch !== '\r') c += ch;
+      }
+      if (c || f.length) { f.push(c); filas.push(f); }
+      return filas;
+    }
+    function fecha(s) { var m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})/.exec((s || '').trim()); return m ? new Date(+m[3], +m[2] - 1, +m[1]) : null; }
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]; }); }
+    fetch(MURO_CSV + (MURO_CSV.indexOf('?') > -1 ? '&' : '?') + 't=' + Date.now()).then(function (r) { return r.text(); }).then(function (t) {
+      var filas = csv(t).slice(1).filter(function (f) { var d = fecha(f[0]); return f[1] && f[1].trim() && (!d || d >= MURO_DESDE); }).reverse();
+      if (!filas.length) return;
+      vacio.style.display = 'none';
+      lista.innerHTML = filas.map(function (f) {
+        return '<div class="reflexion"><p>' + esc(f[1].trim()) + '</p><span>' + esc((f[2] || '').trim() || 'Anónimo') + '</span></div>';
+      }).join('');
+    }).catch(function () {});
+  })();
+</script>
+</body>
+</html>
